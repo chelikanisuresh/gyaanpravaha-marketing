@@ -25,5 +25,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/insights/cic-data-quality-index-rbi`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/insights/arc-cic-reporting-obligations-rbi`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/insights/cic-consumer-protection-grievance-compensation`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/insights/nbfc-npa-90-days-base-layer-2026`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/insights/dpdpa-rules-2025-nbfc-banks-november-2026`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/insights/nbfc-internal-ombudsman-directions-2026`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/insights/rbi-scale-based-regulation-middle-upper-layer-nbfc`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/insights/rbi-digital-banking-authorisation-2026`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/insights/rbi-cybersecurity-compliance-nbfc-cert-in`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/insights/nbfc-unregistered-type-1-cor-surrender-2026`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${BASE_URL}/insights/kyc-master-direction-2025-nbfc-changes`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/insights/dpdpa-consent-management-digital-lending`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
   ]
 }
