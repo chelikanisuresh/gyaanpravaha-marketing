@@ -1,11 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-export const metadata: Metadata = {
-  title: 'Insights — RBI Compliance, DPDPA, CIC & BFSI Advisory',
-  description: 'Practitioner insights on RBI compliance, DPDPA, Digital Lending Guidelines, CIC obligations, and BFSI regulatory developments — from 25 years of institutional experience.',
-  alternates: { canonical: 'https://gyaanpravaha.in/insights' },
-}
 
 const ARTICLES = [
   {
@@ -56,9 +51,7 @@ export default function InsightsPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
             {ARTICLES.map(article => (
               <Link key={article.slug} href={`/insights/${article.slug}`} style={{ textDecoration: 'none' }}>
-                <article style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '2rem', height: '100%', cursor: 'pointer', transition: 'box-shadow 0.2s, transform 0.2s', display: 'flex', flexDirection: 'column' }}
-                  onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.boxShadow = '0 8px 32px rgba(13,27,46,0.1)'; el.style.transform = 'translateY(-3px)' }}
-                  onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.boxShadow = 'none'; el.style.transform = 'none' }}>
+                <article style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '2rem', height: '100%', cursor: 'pointer', transition: 'box-shadow 0.2s, transform 0.2s', display: 'flex', flexDirection: 'column' }} } }>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
                     <span style={{ display: 'inline-block', background: 'rgba(201,168,76,0.1)', color: 'var(--gold)', fontFamily: "'DM Mono', monospace", fontSize: '0.6rem', letterSpacing: '0.12em', padding: '0.2rem 0.6rem', borderRadius: '2px' }}>{article.badge}</span>
                     <span style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.65rem', color: 'var(--text-light)' }}>{article.date} · {article.readTime}</span>

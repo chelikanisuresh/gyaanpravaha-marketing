@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -37,6 +38,7 @@ export default function Footer() {
             <div style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.65rem', color: 'rgba(201,168,76,0.6)', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '1rem' }}>Quick Links</div>
             {[
               { href: '/about', label: 'About' },
+              { href: '/learning', label: 'Learning' },
               { href: '/insights', label: 'Insights' },
               { href: '/complianceos', label: 'ComplianceOS' },
               { href: '/contact', label: 'Book a Call' },

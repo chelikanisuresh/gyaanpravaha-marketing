@@ -105,9 +105,7 @@ export default function HomePage() {
                   background: '#fff', border: '1px solid var(--border)', borderRadius: '8px',
                   padding: '2rem', height: '100%', transition: 'box-shadow 0.2s, transform 0.2s',
                   cursor: 'pointer', position: 'relative', overflow: 'hidden',
-                }}
-                onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.boxShadow = '0 8px 32px rgba(13,27,46,0.1)'; el.style.transform = 'translateY(-3px)' }}
-                onMouseLeave={e => { const el = e.currentTarget as HTMLElement; el.style.boxShadow = 'none'; el.style.transform = 'none' }}>
+                }} } }>
                   <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'var(--gold)', transform: 'scaleX(0)', transformOrigin: 'left', transition: 'transform 0.3s' }} />
                   <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>{svc.icon}</div>
                   <div style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.6rem', color: 'var(--gold)', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{svc.practice}</div>
@@ -185,9 +183,7 @@ export default function HomePage() {
               { badge: 'CIC', title: 'The 21 RBI Circulars on Credit Information Every NBFC Compliance Head Must Know', href: '/insights/21-rbi-circulars-credit-information-nbfc' },
             ].map(post => (
               <Link key={post.href} href={post.href} style={{ textDecoration: 'none' }}>
-                <article style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '2rem', cursor: 'pointer', transition: 'box-shadow 0.2s' }}
-                  onMouseEnter={e => (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(13,27,46,0.08)'}
-                  onMouseLeave={e => (e.currentTarget as HTMLElement).style.boxShadow = 'none'}>
+                <article style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '2rem', cursor: 'pointer', transition: 'box-shadow 0.2s' }} >
                   <span style={{ display: 'inline-block', background: 'rgba(201,168,76,0.1)', color: 'var(--gold)', fontFamily: "'DM Mono', monospace", fontSize: '0.6rem', letterSpacing: '0.12em', padding: '0.2rem 0.6rem', borderRadius: '2px', marginBottom: '0.75rem' }}>{post.badge}</span>
                   <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', color: 'var(--text-dark)', lineHeight: 1.4, fontWeight: 600 }}>{post.title}</h3>
                   <div style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--gold)', fontWeight: 600 }}>Read →</div>
