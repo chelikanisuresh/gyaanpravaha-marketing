@@ -51,7 +51,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div style={{ background: 'rgba(201,168,76,0.06)', border: '1px solid rgba(201,168,76,0.2)', borderRadius: '12px', padding: '2rem', minWidth: '220px', flexShrink: 0 }} className="hide-mobile">
-            <div style={{ width: '90px', height: '90px', borderRadius: '50%', background: 'rgba(201,168,76,0.1)', border: '2px solid rgba(201,168,76,0.4)', margin: '0 auto 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2.5rem' }}>👤</div>
+            <img src="/suresh-headshot.jpg" alt="Chelikani Veera Venkata Suresh Babu" style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover', border: '3px solid rgba(201,168,76,0.4)', margin: '0 auto 1.5rem', display: 'block' }} />
             {[
               { value: '25+', label: 'Years BFSI' },
               { value: '5', label: 'Institutions' },
