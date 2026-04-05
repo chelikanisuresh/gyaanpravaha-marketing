@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Nav from '@/components/Nav'
@@ -126,7 +127,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         })}} />
       </head>
       <body className={inter.className}>
-        <Nav />
+        <Suspense fallback={<div style={{height:'68px',background:'#0d1b2e'}}/>}><Nav /></Suspense>
         <main>{children}</main>
         <Footer />
       </body>
