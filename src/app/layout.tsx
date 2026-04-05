@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Suspense } from 'react'
 import { Inter } from 'next/font/google'
+import dynamic from 'next/dynamic'
 import './globals.css'
-import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+
+const Nav = dynamic(() => import('@/components/Nav'), { ssr: false })
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -127,7 +128,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         })}} />
       </head>
       <body className={inter.className}>
-        <Suspense fallback={<div style={{height:'68px',background:'#0d1b2e'}}/>}><Nav /></Suspense>
+        <Nav />
         <main>{children}</main>
         <Footer />
       </body>
