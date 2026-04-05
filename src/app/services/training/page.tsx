@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Corporate Training — RBI Compliance, DPDPA, Cyber Risk for BFSI | Practice F',
   description: 'Practitioner-led corporate training for Banks, NBFCs, and HFCs — RBI compliance, DPDPA, cyber risk, digital lending. Guest Faculty ASCI. Trained Cholamandalam Investment & Finance.',
   keywords: ['BFSI corporate training India', 'RBI compliance training NBFC', 'DPDPA training India', 'cyber risk training BFSI', 'ASCI guest faculty', 'NBFC compliance workshop'],
-  alternates: { canonical: 'https://gyaanpravaha.in/services/training' },
+  alternates: { canonical: 'https://gyaanpravaha.com/services/training' },
 }
 
 export default function TrainingPage() {
@@ -41,6 +41,10 @@ export default function TrainingPage() {
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignSelf: 'center' }}>
               <span style={{ background: 'var(--navy)', color: 'var(--gold)', padding: '0.5rem 1.25rem', borderRadius: '4px', fontSize: '0.85rem', fontWeight: 600 }}>Cholamandalam Investment & Finance</span>
               <span style={{ background: '#fff', border: '1px solid var(--border)', color: 'var(--navy)', padding: '0.5rem 1.25rem', borderRadius: '4px', fontSize: '0.85rem' }}>Guest Faculty — ASCI</span>
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1rem' }}>
+              <img src="/cholamandalam-training-1.jpg" alt="Felicitation at Cholamandalam training" style={{ width: '100%', borderRadius: '8px', objectFit: 'cover' as const, height: '180px' }} />
+              <img src="/cholamandalam-training-2.jpg" alt="Cholamandalam enterprise cyber risk training 2026" style={{ width: '100%', borderRadius: '8px', objectFit: 'cover' as const, height: '180px' }} />
             </div>
           </div>
         </div>

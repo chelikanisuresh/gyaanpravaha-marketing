@@ -11,9 +11,22 @@ const SERVICES = [
   { href: '/services/training', label: 'Corporate Training' },
 ]
 
+const PRODUCTS = [
+  { href: '/complianceos', label: 'ComplianceOS', sub: 'RBI Compliance Management Platform' },
+  { href: '/learning', label: 'Learning', sub: 'Online Compliance Courses for BFSI' },
+]
+
+const dropdownStyle = {
+  position: 'absolute' as const, top: '100%', left: 0, background: '#0d1b2e',
+  border: '1px solid rgba(201,168,76,0.2)', borderRadius: '6px',
+  listStyle: 'none' as const, padding: '0.5rem 0', minWidth: '260px',
+  boxShadow: '0 12px 32px rgba(0,0,0,0.4)', zIndex: 100,
+}
+
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const [productsOpen, setProductsOpen] = useState(false)
 
   const linkStyle = { padding: '0.5rem 0.9rem', display: 'block', fontSize: '0.88rem', fontWeight: 500, color: 'rgba(255,255,255,0.75)', textDecoration: 'none' } as const
 
@@ -34,15 +47,17 @@ export default function Nav() {
             <circle cx="44.5" cy="24" r="1.4" fill="#c9a84c"/>
           </svg>
           <span style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.1rem', fontWeight: 700, color: '#c9a84c', letterSpacing: '0.05em', lineHeight: 1.1 }}>Gyaan Pravaha</span>
+            <span style={{ fontFamily: 'Georgia, serif', fontSize: '1.1rem', fontWeight: 700, color: '#c9a84c', letterSpacing: '0.05em', lineHeight: 1.1 }}>Gyaan Pravaha</span>
             <span style={{ fontSize: '0.55rem', color: 'rgba(201,168,76,0.6)', letterSpacing: '0.2em', textTransform: 'uppercase' }}>BFSI Advisory</span>
           </span>
         </Link>
 
         {/* Desktop nav */}
-        <ul style={{ display: 'flex', alignItems: 'center', listStyle: 'none', gap: '0.25rem', marginLeft: 'auto', marginRight: '1.5rem' }}>
+        <ul style={{ display: 'flex', alignItems: 'center', listStyle: 'none', gap: '0.1rem', marginLeft: 'auto', marginRight: '1rem' }}>
           <li><Link href="/" style={linkStyle}>Home</Link></li>
           <li><Link href="/about" style={linkStyle}>About</Link></li>
+
+          {/* Services dropdown */}
           <li style={{ position: 'relative' }}
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}>
@@ -50,7 +65,7 @@ export default function Nav() {
               Services <span style={{ fontSize: '0.6rem' }}>▾</span>
             </span>
             {servicesOpen && (
-              <ul style={{ position: 'absolute', top: '100%', left: 0, background: '#0d1b2e', border: '1px solid rgba(201,168,76,0.2)', borderRadius: '6px', listStyle: 'none', padding: '0.5rem 0', minWidth: '240px', boxShadow: '0 12px 32px rgba(0,0,0,0.4)', zIndex: 100 }}>
+              <ul style={dropdownStyle}>
                 {SERVICES.map(s => (
                   <li key={s.href}>
                     <Link href={s.href} style={{ display: 'block', padding: '0.6rem 1.2rem', fontSize: '0.85rem', color: 'rgba(255,255,255,0.75)', textDecoration: 'none' }}>
@@ -61,16 +76,35 @@ export default function Nav() {
               </ul>
             )}
           </li>
+
+          {/* Products dropdown */}
+          <li style={{ position: 'relative' }}
+            onMouseEnter={() => setProductsOpen(true)}
+            onMouseLeave={() => setProductsOpen(false)}>
+            <span style={{ ...linkStyle, display: 'flex', alignItems: 'center', gap: '4px', cursor: 'pointer' }}>
+              Products <span style={{ fontSize: '0.6rem' }}>▾</span>
+            </span>
+            {productsOpen && (
+              <ul style={dropdownStyle}>
+                {PRODUCTS.map(p => (
+                  <li key={p.href}>
+                    <Link href={p.href} style={{ display: 'block', padding: '0.75rem 1.2rem', textDecoration: 'none', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                      <div style={{ fontSize: '0.88rem', color: '#c9a84c', fontWeight: 600, marginBottom: '2px' }}>{p.label}</div>
+                      <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)' }}>{p.sub}</div>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+
           <li><Link href="/insights" style={linkStyle}>Insights</Link></li>
-          <li><Link href="/complianceos" style={linkStyle}>ComplianceOS</Link></li>
-          <li><Link href="/learning" style={linkStyle}>Learning</Link></li>
         </ul>
 
-        <a href="https://gyaanpravaha-web.vercel.app/login" style={{ background: 'transparent', color: 'rgba(255,255,255,0.6)', padding: '0.6rem 1.1rem', borderRadius: '4px', fontWeight: 500, fontSize: '0.85rem', textDecoration: 'none', flexShrink: 0, border: '1px solid rgba(255,255,255,0.15)', marginRight: '0.5rem' }}>Login</a>
-        <Link href="/contact" style={{ background: '#c9a84c', color: '#0d1b2e', padding: '0.6rem 1.4rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', letterSpacing: '0.05em', textDecoration: 'none', flexShrink: 0 }}>Book a Call</Link>
+        <a href="https://gyaanpravaha-web.vercel.app/login" style={{ background: 'transparent', color: 'rgba(255,255,255,0.6)', padding: '0.55rem 1rem', borderRadius: '4px', fontWeight: 500, fontSize: '0.82rem', textDecoration: 'none', flexShrink: 0, border: '1px solid rgba(255,255,255,0.15)', marginRight: '0.5rem' }}>Login</a>
+        <Link href="/contact" style={{ background: '#c9a84c', color: '#0d1b2e', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', letterSpacing: '0.05em', textDecoration: 'none', flexShrink: 0 }}>Book a Call</Link>
 
-        {/* Mobile toggle */}
-        <button onClick={() => setMenuOpen(!menuOpen)} style={{ marginLeft: '1rem', background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: 'pointer', display: 'none' }} aria-label="Menu">☰</button>
+        <button onClick={() => setMenuOpen(!menuOpen)} style={{ marginLeft: '1rem', background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: 'pointer' }} aria-label="Menu">☰</button>
       </div>
 
       {/* Mobile menu */}
@@ -79,10 +113,10 @@ export default function Nav() {
           {[
             { href: '/', label: 'Home' },
             { href: '/about', label: 'About' },
-            ...SERVICES,
-            { href: '/insights', label: 'Insights' },
+            ...SERVICES.map(s => ({ href: s.href, label: s.label })),
             { href: '/complianceos', label: 'ComplianceOS' },
             { href: '/learning', label: 'Learning' },
+            { href: '/insights', label: 'Insights' },
             { href: '/contact', label: 'Book a Call' },
           ].map(link => (
             <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} style={{ display: 'block', padding: '0.75rem 0', color: 'rgba(255,255,255,0.8)', textDecoration: 'none', borderBottom: '1px solid rgba(255,255,255,0.06)', fontSize: '0.95rem' }}>

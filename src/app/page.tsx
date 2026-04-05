@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'RBI Compliance Advisory for NBFCs, SFBs & Banks | Gyaan Pravaha',
   description: 'Practitioner-grade BFSI advisory — RBI Master Directions compliance, LOS/LMS technology, DPDPA, CIC obligations. 25+ years across Piramal Finance, Axis Bank, HDFC Bank. Mumbai.',
-  alternates: { canonical: 'https://gyaanpravaha.in' },
+  alternates: { canonical: 'https://gyaanpravaha.com' },
 }
 
 const SERVICES = [
