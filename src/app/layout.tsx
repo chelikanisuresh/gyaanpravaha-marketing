@@ -1,9 +1,7 @@
 import type { Metadata } from 'next'
-import dynamic from 'next/dynamic'
 import './globals.css'
+import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
-
-const Nav = dynamic(() => import('@/components/Nav'), { ssr: false })
 
 
 const BASE_URL = 'https://gyaanpravaha.in'
