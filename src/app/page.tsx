@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import HeroAnimation from '@/components/HeroAnimation'
 
 export const metadata: Metadata = {
   title: 'RBI Compliance Advisory for NBFCs, SFBs & Banks | Gyaan Pravaha',
@@ -32,23 +33,34 @@ const BLOG_POSTS = [
 export default function HomePage() {
   return (
     <>
-      <section style={{ background: 'var(--navy)', padding: 'clamp(4rem, 8vw, 7rem) 2rem' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ fontSize: '0.7rem', color: 'rgba(201,168,76,0.7)', letterSpacing: '0.2em', textTransform: 'uppercase' as const, marginBottom: '1.5rem' }}>
-            Independent BFSI Advisor · Mumbai, India
-          </div>
-          <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(2.2rem, 5vw, 4rem)', color: '#fff', fontWeight: 700, lineHeight: 1.1, marginBottom: '1.5rem', maxWidth: '700px' }}>
-            RBI Compliance &amp; BFSI Advisory<br />
-            <span style={{ color: '#c9a84c' }}>That Comes From Within.</span>
-          </h1>
-          <p style={{ fontSize: '1.05rem', color: 'rgba(255,255,255,0.65)', maxWidth: '540px', lineHeight: 1.8, marginBottom: '2rem' }}>
-            Practitioner-grade advisory for Banks, NBFCs, and Small Finance Banks — across lending technology, RBI compliance, data protection, credit, and CIC obligations.
-          </p>
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' as const }}>
-            <Link href="/contact" className="btn-primary">Book a 30-Min Discovery Call</Link>
-            <Link href="/about" className="btn-outline">View Profile</Link>
+      <section style={{ background: 'var(--navy)', padding: 'clamp(4rem, 8vw, 7rem) 2rem', position: 'relative', overflow: 'hidden', minHeight: '480px' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
+          <div style={{ maxWidth: '520px' }}>
+            <div style={{ fontSize: '0.7rem', color: 'rgba(201,168,76,0.7)', letterSpacing: '0.2em', textTransform: 'uppercase' as const, marginBottom: '1.5rem', fontFamily: 'monospace' }}>
+              Independent BFSI Advisor · Mumbai, India
+            </div>
+            <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(2.2rem, 5vw, 3.8rem)', color: '#fff', fontWeight: 700, lineHeight: 1.1, marginBottom: '1.5rem' }}>
+              RBI Compliance &amp; BFSI Advisory<br />
+              <span style={{ color: '#c9a84c' }}>That Comes From Within.</span>
+            </h1>
+            <p style={{ fontSize: '1.05rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.8, marginBottom: '2rem' }}>
+              Practitioner-grade advisory for Banks, NBFCs, and Small Finance Banks — across 6 practice areas and 2 SaaS products.
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' as const, marginBottom: '2.5rem' }}>
+              <Link href="/contact" className="btn-primary">Book a 30-Min Discovery Call</Link>
+              <Link href="/about" className="btn-outline">View Profile</Link>
+            </div>
+            <div style={{ display: 'flex', gap: '2rem' }}>
+              {[{ val: '25+', lbl: 'Years BFSI' }, { val: '₹3L+Cr', lbl: 'Lending Book' }, { val: '200+', lbl: 'Securitisations' }].map(s => (
+                <div key={s.lbl}>
+                  <div style={{ fontFamily: 'Georgia, serif', fontSize: '1.5rem', fontWeight: 700, color: '#c9a84c' }}>{s.val}</div>
+                  <div style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.08em', marginTop: '2px' }}>{s.lbl}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
+        <HeroAnimation />
       </section>
 
       <section style={{ background: '#132338', borderBottom: '1px solid #2a3f58', padding: '2rem' }}>
