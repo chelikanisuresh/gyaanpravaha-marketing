@@ -38,13 +38,15 @@ export default function TrainingPage() {
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '0.75rem' }}>Conducted a full-day training programme on Enterprise Cyber Risk Management for the senior leadership team at <strong>Cholamandalam Investment and Finance Company</strong> — one of India's leading NBFCs.</p>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>Delivered as <strong>Guest Resource from ASCI</strong> (Administrative Staff College of India), covering cyber threat landscape, RBI IT Risk & Cyber Security framework, incident response, and board-level governance.</p>
             </div>
-            <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignSelf: 'center' }}>
-              <span style={{ background: 'var(--navy)', color: 'var(--gold)', padding: '0.5rem 1.25rem', borderRadius: '4px', fontSize: '0.85rem', fontWeight: 600 }}>Cholamandalam Investment & Finance</span>
-              <span style={{ background: '#fff', border: '1px solid var(--border)', color: 'var(--navy)', padding: '0.5rem 1.25rem', borderRadius: '4px', fontSize: '0.85rem' }}>Guest Faculty — ASCI</span>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '1rem' }}>
-              <img src="/cholamandalam-training-1.jpg" alt="Felicitation at Cholamandalam training" style={{ width: '100%', borderRadius: '8px', objectFit: 'cover' as const, height: '180px' }} />
-              <img src="/cholamandalam-training-2.jpg" alt="Cholamandalam enterprise cyber risk training 2026" style={{ width: '100%', borderRadius: '8px', objectFit: 'cover' as const, height: '180px' }} />
+            <div style={{ display: 'flex', flexDirection: 'column' as const, gap: '1rem', minWidth: '280px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+                <img src="/cholamandalam-training-1.jpg" alt="Felicitation at Cholamandalam training" style={{ width: '100%', borderRadius: '8px', objectFit: 'cover' as const, height: '180px' }} />
+                <img src="/cholamandalam-training-2.jpg" alt="Cholamandalam enterprise cyber risk training 2026" style={{ width: '100%', borderRadius: '8px', objectFit: 'cover' as const, height: '180px' }} />
+              </div>
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' as const }}>
+                <span style={{ background: 'var(--navy)', color: 'var(--gold)', padding: '0.5rem 1.25rem', borderRadius: '4px', fontSize: '0.85rem', fontWeight: 600 }}>Cholamandalam Investment & Finance</span>
+                <span style={{ background: '#fff', border: '1px solid var(--border)', color: 'var(--navy)', padding: '0.5rem 1.25rem', borderRadius: '4px', fontSize: '0.85rem' }}>Guest Faculty — ASCI</span>
+              </div>
             </div>
           </div>
         </div>

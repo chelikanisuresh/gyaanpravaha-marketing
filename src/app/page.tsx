@@ -86,14 +86,24 @@ export default function HomePage() {
 
       <section style={{ padding: 'clamp(3rem, 6vw, 5rem) 2rem', background: 'rgba(201,168,76,0.05)', borderTop: '1px solid rgba(201,168,76,0.15)' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' as const }}>
-          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: '#c9a84c', marginBottom: '0.75rem' }}>Product</div>
-          <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: '#0d1b2e', marginBottom: '1rem' }}>Introducing ComplianceOS</h2>
-          <p style={{ color: '#5a6a7a', maxWidth: '580px', margin: '0 auto 2rem', fontSize: '1rem', lineHeight: 1.7 }}>
-            The complete RBI compliance management platform for NBFCs and financial institutions — obligation register, regulatory calendar, circular tracking, and audit-ready reporting.
+          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: '#c9a84c', marginBottom: '0.75rem' }}>Products</div>
+          <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: '#0d1b2e', marginBottom: '0.75rem' }}>Built for India's Financial Institutions</h2>
+          <p style={{ color: '#5a6a7a', maxWidth: '580px', margin: '0 auto 2.5rem', fontSize: '1rem', lineHeight: 1.7 }}>
+            Two SaaS products built from practitioner experience — for compliance management and compliance learning.
           </p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' as const }}>
-            <Link href="/complianceos" className="btn-primary">Learn About ComplianceOS</Link>
-            <Link href="/contact" style={{ display: 'inline-block', background: 'transparent', color: '#0d1b2e', padding: '0.8rem 2rem', borderRadius: '4px', fontWeight: 600, fontSize: '0.9rem', border: '1px solid rgba(13,27,46,0.3)', textDecoration: 'none' }}>Request a Demo</Link>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', maxWidth: '800px', margin: '0 auto' }}>
+            <div style={{ background: '#fff', border: '1px solid #e4ddd0', borderRadius: '10px', padding: '2rem', textAlign: 'left' as const }}>
+              <div style={{ fontSize: '0.6rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '0.5rem' }}>Compliance Management</div>
+              <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.5rem', color: '#0d1b2e', marginBottom: '0.75rem', fontWeight: 700 }}>ComplianceOS</h3>
+              <p style={{ color: '#5a6a7a', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>731+ mapped RBI obligations, regulatory calendar, circular tracking, audit-ready reporting.</p>
+              <Link href="/complianceos" style={{ display: 'inline-block', background: '#c9a84c', color: '#0d1b2e', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', textDecoration: 'none' }}>Learn More</Link>
+            </div>
+            <div style={{ background: '#fff', border: '1px solid #e4ddd0', borderRadius: '10px', padding: '2rem', textAlign: 'left' as const }}>
+              <div style={{ fontSize: '0.6rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '0.5rem' }}>Compliance Learning</div>
+              <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.5rem', color: '#0d1b2e', marginBottom: '0.75rem', fontWeight: 700 }}>Learning</h3>
+              <p style={{ color: '#5a6a7a', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>Online compliance courses — RBI, DPDPA, Digital Lending, KYC/AML, CIC. Certificates included.</p>
+              <Link href="/learning" style={{ display: 'inline-block', background: '#c9a84c', color: '#0d1b2e', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', textDecoration: 'none' }}>Learn More</Link>
+            </div>
           </div>
         </div>
       </section>
