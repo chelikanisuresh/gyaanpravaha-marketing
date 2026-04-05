@@ -1,12 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import dynamic from 'next/dynamic'
 import './globals.css'
 import Footer from '@/components/Footer'
 
 const Nav = dynamic(() => import('@/components/Nav'), { ssr: false })
 
-const inter = Inter({ subsets: ['latin'] })
 
 const BASE_URL = 'https://gyaanpravaha.in'
 
@@ -127,7 +125,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }
         })}} />
       </head>
-      <body className={inter.className}>
+      <body>
         <Nav />
         <main>{children}</main>
         <Footer />
