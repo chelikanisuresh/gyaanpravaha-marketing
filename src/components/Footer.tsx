@@ -33,14 +33,26 @@ export default function Footer() {
             ))}
           </div>
 
+          {/* Products */}
+          <div>
+            <div style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.65rem', color: 'rgba(201,168,76,0.6)', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '1rem' }}>Products</div>
+            {[
+              { href: '/complianceos', label: 'ComplianceOS', sub: 'RBI Compliance Platform' },
+              { href: '/learning', label: 'Learning', sub: 'Online Compliance Courses' },
+            ].map(link => (
+              <Link key={link.href} href={link.href} style={{ display: 'block', textDecoration: 'none', marginBottom: '0.9rem' }}>
+                <div style={{ fontSize: '0.85rem', color: '#c9a84c', fontWeight: 600, marginBottom: '1px' }}>{link.label}</div>
+                <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.35)' }}>{link.sub}</div>
+              </Link>
+            ))}
+          </div>
+
           {/* Quick links */}
           <div>
             <div style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.65rem', color: 'rgba(201,168,76,0.6)', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '1rem' }}>Quick Links</div>
             {[
               { href: '/about', label: 'About' },
-              { href: '/learning', label: 'Learning' },
               { href: '/insights', label: 'Insights' },
-              { href: '/complianceos', label: 'ComplianceOS' },
               { href: '/contact', label: 'Book a Call' },
             ].map(link => (
               <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none', marginBottom: '0.4rem' }}>
