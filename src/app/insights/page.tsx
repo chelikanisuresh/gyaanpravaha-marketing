@@ -4,13 +4,18 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Insights — RBI Compliance, DPDPA, CIC & BFSI Advisory',
   description: 'Practitioner insights on RBI compliance, DPDPA, Digital Lending Guidelines, CIC obligations, and BFSI regulatory developments.',
-  alternates: { canonical: 'https://gyaanpravaha.in/insights' },
+  alternates: { canonical: 'https://gyaanpravaha.com/insights' },
 }
 
 const ARTICLES = [
   { slug: 'digital-lending-guidelines-nbfc-compliance', badge: 'RBI', date: 'March 2026', title: 'Digital Lending Guidelines Two Years On — Where Most NBFCs Are Still Non-Compliant', excerpt: 'The RBI\'s Digital Lending Guidelines have been in force since 2022. Yet most NBFCs still have significant gaps in LSP governance, FLDG structure, KFS implementation, and digital loan agreement requirements.', readTime: '8 min read' },
   { slug: 'dpdpa-2023-nbfc-compliance-guide', badge: 'DPDPA', date: 'February 2026', title: 'DPDPA 2023 — What Every NBFC Needs to Do Before the Rules Are Notified', excerpt: 'The Digital Personal Data Protection Act 2023 is now law. NBFCs that wait for the Rules before acting will not have enough time to build a compliant data processing framework.', readTime: '10 min read' },
   { slug: '21-rbi-circulars-credit-information-nbfc', badge: 'CIC', date: 'January 2026', title: 'The 21 RBI Circulars on Credit Information Every NBFC Compliance Head Must Know', excerpt: 'CICRA 2005 and the 21 RBI circulars on credit information set out an intricate framework of obligations. Most compliance teams know only a fraction of them.', readTime: '12 min read' },
+  { slug: 'cic-regulatory-framework-cicra-2005', badge: 'CIC', date: 'April 2026', title: 'CIC Regulatory Framework — CICRA 2005 and the 21 Instruments Every Credit Information Company Must Know', excerpt: 'A complete regulatory corpus for Credit Information Companies spans 21 instruments — from primary legislation in 2005 through to Amendment Directions issued in January 2026. Most CICs are operating against an incomplete picture of their obligations.', readTime: '12 min read' },
+  { slug: 'cic-compliance-july-2026-deadline', badge: 'CIC', date: 'April 2026', title: 'July 1, 2026 — The Most Consequential CIC Compliance Deadline in a Decade', excerpt: 'RBI\'s Amendment Directions of December 2025 introduce a 4-reference-date credit reporting regime. Four major reforms come into force simultaneously on July 1, 2026. Every CI and CIC must be operationally ready.', readTime: '10 min read' },
+  { slug: 'cic-data-quality-index-rbi', badge: 'DQI', date: 'April 2026', title: 'RBI\'s Data Quality Index for Credit Information — What Every Credit Institution Must Know', excerpt: 'From July 1, 2026, file-level DQI must be delivered within 3 calendar days. The weighted average DQI formula becomes mandatory. Poor DQI now has direct regulatory consequences via DAKSH.', readTime: '9 min read' },
+  { slug: 'arc-cic-reporting-obligations-rbi', badge: 'ARC', date: 'April 2026', title: 'ARC Obligations to CICs — What Asset Reconstruction Companies Must Now Report', excerpt: 'Two instruments from November and December 2025 have fundamentally changed CIC reporting for ARCs. Membership of all four CICs, UCRF reporting, CKYC obligations, and July 2026 readiness — all now mandatory.', readTime: '8 min read' },
+  { slug: 'cic-consumer-protection-grievance-compensation', badge: 'CONSUMER', date: 'April 2026', title: 'CIC Consumer Protection — ₹100/Day Compensation, FFCR Rights, and the Internal Ombudsman', excerpt: 'The ₹100/day compensation framework creates compounding liability for unresolved grievances. Combined with Internal Ombudsman Directions 2026 and RBIOS, consumer protection is now the most scrutinised CIC compliance dimension.', readTime: '9 min read' },
 ]
 
 const UPCOMING = [
