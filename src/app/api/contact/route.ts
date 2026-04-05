@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: 'Gyaan Pravaha Website <noreply@gyaanpravaha.in>',
       to: TO_EMAIL,
-      replyTo: email,
+      reply_to: email,
       subject: `New Discovery Call Request — ${institution}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; background: #f9f9f9; padding: 32px; border-radius: 8px;">
