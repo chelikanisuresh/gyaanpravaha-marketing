@@ -72,7 +72,7 @@ export default function HeroAnimation() {
       if (t % 200 === 0) pulses.push({ r: 0, alpha: 0.5 })
 
       // Orbit rings
-      ;([[95, 'rgba(255,255,255,0.05)'], [152, 'rgba(201,168,76,0.07)'], [200, 'rgba(255,255,255,0.025)']] as [number, string][]).forEach(([r, col]) => {
+      ;([[95, 'rgba(255,255,255,0.05)'], [152, 'rgba(201,168,76,0.07)'], [200, 'rgba(201,168,76,0.1)']] as [number, string][]).forEach(([r, col]) => {
         ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2)
         ctx.strokeStyle = col; ctx.lineWidth = 0.6; ctx.setLineDash([3, 9]); ctx.stroke(); ctx.setLineDash([])
       })
@@ -92,12 +92,13 @@ export default function HeroAnimation() {
         const nearAngle = Math.atan2(p.y - cy, p.x - cx)
         ctx.beginPath(); ctx.moveTo(p.x, p.y)
         ctx.lineTo(cx + Math.cos(nearAngle) * 160, cy + Math.sin(nearAngle) * 160)
-        ctx.strokeStyle = 'rgba(255,255,255,0.04)'; ctx.lineWidth = 0.4
+        ctx.strokeStyle = 'rgba(201,168,76,0.08)'; ctx.lineWidth = 0.4
         ctx.setLineDash([2, 8]); ctx.stroke(); ctx.setLineDash([])
         ctx.beginPath(); ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2)
-        ctx.fillStyle = 'rgba(255,255,255,0.18)'; ctx.fill()
+        ctx.fillStyle = 'rgba(201,168,76,0.6)'; ctx.fill()
+        ctx.strokeStyle = 'rgba(201,168,76,0.3)'; ctx.lineWidth = 0.5; ctx.stroke()
         const { tx, ty, align } = labelOffset(p.x, p.y, 10)
-        ctx.font = '8.5px monospace'; ctx.fillStyle = 'rgba(255,255,255,0.22)'
+        ctx.font = '500 8.5px monospace'; ctx.fillStyle = 'rgba(201,168,76,0.65)'
         ctx.textAlign = align; ctx.fillText(o.label, tx, ty + 3)
       })
 
