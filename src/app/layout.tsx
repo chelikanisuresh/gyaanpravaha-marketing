@@ -5,7 +5,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://gyaanpravaha-marketing.vercel.app')
+const BASE_URL = 'https://gyaanpravaha.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -55,18 +55,13 @@ export const metadata: Metadata = {
     siteName: 'Gyaan Pravaha',
     title: 'Gyaan Pravaha | RBI Compliance Advisory for NBFCs & SFBs',
     description: 'Practitioner-grade advisory for Banks, NBFCs, and Small Finance Banks across RBI compliance, LOS/LMS technology, DPDPA, CIC, and credit. 25+ years of hands-on institutional experience.',
-    images: [{
-      url: '/og-image.png',
-      width: 1200,
-      height: 630,
-      alt: 'Gyaan Pravaha — BFSI Advisory',
-    }],
+
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Gyaan Pravaha | RBI Compliance Advisory',
     description: 'Practitioner-grade BFSI advisory — RBI compliance, LOS/LMS, DPDPA, CIC. 25+ years experience.',
-    images: ['/og-image.png'],
+
   },
   alternates: {
     canonical: BASE_URL,
