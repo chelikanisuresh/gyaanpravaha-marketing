@@ -29,7 +29,7 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section style={{ background: '#0d1b2e', padding: 'clamp(4rem, 8vw, 6rem) 2rem' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 280px', gap: '4rem', alignItems: 'start' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem', alignItems: 'start' }}>
           <div>
             <div style={{ fontSize: '0.7rem', color: 'rgba(201,168,76,0.7)', letterSpacing: '0.2em', textTransform: 'uppercase' as const, marginBottom: '0.75rem' }}>About</div>
             <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '0.5rem', lineHeight: 1.1 }}>Chelikani Veera<br />Venkata Suresh Babu</h1>
@@ -65,7 +65,7 @@ export default function AboutPage() {
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.2em', textTransform: 'uppercase' as const, marginBottom: '0.75rem' }}>Profile</div>
           <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: '#0d1b2e', marginBottom: '2.5rem' }}>Leadership Impact</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem' }}>
             <div>
               <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.25rem', color: '#c9a84c', marginBottom: '0.75rem', fontWeight: 600 }}>Executive Leadership at Piramal Finance</h3>
               <p style={{ fontSize: '0.93rem', color: '#5a6a7a', lineHeight: 1.85, marginBottom: '2rem' }}>As Executive Vice President and Head – Automation & Re-engineering, Securitisation Operations, and Data Protection Officer at Piramal Finance, led end-to-end process modernisation across lending, risk, and compliance. Spearheaded 200+ securitisation transactions, digitised KYC and onboarding, reduced turnaround times, and ensured zero downtime in lending systems.</p>
@@ -106,7 +106,7 @@ export default function AboutPage() {
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.2em', textTransform: 'uppercase' as const, marginBottom: '0.75rem' }}>Education & Certifications</div>
           <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: '#0d1b2e', marginBottom: '2.5rem' }}>Qualifications</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem' }}>
             <div>
               <h3 style={{ fontSize: '0.75rem', fontWeight: 700, color: '#5a6a7a', letterSpacing: '0.1em', textTransform: 'uppercase' as const, marginBottom: '1.25rem' }}>Academic</h3>
               {[

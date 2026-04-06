@@ -174,6 +174,14 @@ export default function HeroAnimation() {
     canvas.addEventListener('mousemove', handleMouseMove)
     canvas.addEventListener('mouseleave', () => { hovered = null })
     window.addEventListener('resize', resize)
+
+    // Pause animation when tab is not visible (saves CPU on mobile)
+    const handleVisibility = () => {
+      if (document.hidden) cancelAnimationFrame(animId)
+      else draw()
+    }
+    document.addEventListener('visibilitychange', handleVisibility)
+
     resize()
     draw()
 
@@ -181,10 +189,15 @@ export default function HeroAnimation() {
       cancelAnimationFrame(animId)
       canvas.removeEventListener('mousemove', handleMouseMove)
       window.removeEventListener('resize', resize)
+      document.removeEventListener('visibilitychange', handleVisibility)
     }
   }, [])
 
   return (
-    <canvas ref={canvasRef} style={{ position: 'absolute', right: 0, top: 0, width: '58%', height: '100%', display: 'block' }} />
+    <canvas
+      ref={canvasRef}
+      className="hero-canvas"
+      style={{ position: 'absolute', right: 0, top: 0, width: '58%', height: '100%', display: 'block' }}
+    />
   )
 }

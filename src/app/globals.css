@@ -102,3 +102,20 @@ a { color: inherit; }
 @media (max-width: 768px) {
   .hide-mobile { display: none; }
 }
+
+/* Mobile responsive fixes — Sprint 1 */
+@media (max-width: 900px) {
+  .hero-canvas { display: none !important; }
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+}
+
+/* Nav hamburger show on mobile */
+@media (max-width: 768px) {
+  nav button[aria-label="Menu"] { display: block !important; }
+}

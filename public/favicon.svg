@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <circle cx="24" cy="24" r="23" fill="#0d1b2e"/>
+  <circle cx="24" cy="24" r="21" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+  <circle cx="24" cy="24" r="15.5" fill="none" stroke="#c9a84c" stroke-width="0.6" stroke-dasharray="2,2.5"/>
+  <text x="24" y="22" font-family="Georgia,serif" font-size="9.5" font-weight="700" fill="#c9a84c" text-anchor="middle" letter-spacing="1">GP</text>
+  <text x="24" y="30" font-family="Arial,sans-serif" font-size="3.2" fill="#c9a84c" text-anchor="middle" letter-spacing="1.8">ADVISORY</text>
+  <circle cx="24" cy="3.5" r="1.4" fill="#c9a84c"/>
+  <circle cx="24" cy="44.5" r="1.4" fill="#c9a84c"/>
+  <circle cx="3.5" cy="24" r="1.4" fill="#c9a84c"/>
+  <circle cx="44.5" cy="24" r="1.4" fill="#c9a84c"/>
+</svg>

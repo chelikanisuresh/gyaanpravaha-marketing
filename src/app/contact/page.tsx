@@ -4,7 +4,7 @@ import ContactForm from './ContactForm'
 export const metadata: Metadata = {
   title: 'Book a Discovery Call — RBI Compliance Advisory',
   description: 'Book a 30-minute discovery call with Gyaan Pravaha — RBI compliance advisory for NBFCs, SFBs, and Banks. Mumbai. +91-9833823262.',
-  alternates: { canonical: 'https://gyaanpravaha.in/contact' },
+  alternates: { canonical: 'https://gyaanpravaha.com/contact' },
 }
 
 export default function ContactPage() {
@@ -21,7 +21,7 @@ export default function ContactPage() {
       </section>
 
       <section style={{ padding: 'clamp(3rem, 6vw, 5rem) 2rem', background: 'var(--navy)' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '5rem', alignItems: 'start' }}>
+        <div className="contact-grid" style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '5rem', alignItems: 'start' }}>
 
           {/* Left — contact info */}
           <div>
@@ -32,7 +32,7 @@ export default function ContactPage() {
 
             {[
               { icon: '📞', label: 'Phone / WhatsApp', value: '+91-9833823262', href: 'tel:+919833823262' },
-              { icon: '✉️', label: 'Email', value: 'thornleyadvisoryservices@gmail.com', href: 'mailto:thornleyadvisoryservices@gmail.com' },
+              { icon: '✉️', label: 'Email', value: 'suresh@gyaanpravaha.com', href: 'mailto:suresh@gyaanpravaha.com' },
               { icon: '💼', label: 'LinkedIn', value: 'linkedin.com/in/sureshchelikani', href: 'https://linkedin.com/in/sureshchelikani' },
               { icon: '📍', label: 'Location', value: 'Mumbai, India', href: undefined },
             ].map(detail => (

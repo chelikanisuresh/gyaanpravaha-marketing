@@ -66,7 +66,7 @@ export default function Footer() {
             <div style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.65rem', color: 'rgba(201,168,76,0.6)', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '1rem' }}>Contact</div>
             <div style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', lineHeight: 2 }}>
               <a href="tel:+919833823262" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none', display: 'block' }}>+91-9833823262</a>
-              <a href="mailto:thornleyadvisoryservices@gmail.com" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none', display: 'block', fontSize: '0.8rem' }}>thornleyadvisoryservices@gmail.com</a>
+              <a href="mailto:suresh@gyaanpravaha.com" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none', display: 'block', fontSize: '0.8rem' }}>suresh@gyaanpravaha.com</a>
               <a href="https://linkedin.com/in/sureshchelikani" target="_blank" rel="noreferrer" style={{ color: '#c9a84c', textDecoration: 'none', display: 'block' }}>LinkedIn ↗</a>
               <span>Mumbai, India</span>
             </div>

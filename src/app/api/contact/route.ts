@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const TO_EMAIL = 'thornleyadvisoryservices@gmail.com'
+const TO_EMAIL = 'suresh@gyaanpravaha.com'
 
 export async function POST(req: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY || '')
@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
 
     // Send notification to Suresh
     await resend.emails.send({
-      from: 'Gyaan Pravaha Website <noreply@gyaanpravaha.in>',
+      from: 'Gyaan Pravaha Website <noreply@gyaanpravaha.com>',
       to: TO_EMAIL,
       reply_to: email,
       subject: `New Discovery Call Request — ${institution}`,
@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
 
     // Send confirmation to enquirer
     await resend.emails.send({
-      from: 'Gyaan Pravaha <noreply@gyaanpravaha.in>',
+      from: 'Gyaan Pravaha <noreply@gyaanpravaha.com>',
       to: email,
       subject: 'Your Discovery Call Request — Gyaan Pravaha',
       html: `
@@ -69,7 +69,7 @@ export async function POST(req: NextRequest) {
           <p style="color: #555; line-height: 1.8; margin-bottom: 1rem;">We've received your discovery call request from <strong>${institution}</strong>. We will get back to you within 1 business day to confirm a convenient time for a 30-minute call.</p>
           <p style="color: #555; line-height: 1.8; margin-bottom: 2rem;">In the meantime, you can reach us directly at <a href="tel:+919833823262" style="color: #c9a84c;">+91-9833823262</a> or connect on <a href="https://linkedin.com/in/sureshchelikani" style="color: #c9a84c;">LinkedIn</a>.</p>
           <div style="border-top: 1px solid #eee; padding-top: 1.5rem; font-size: 0.78rem; color: #aaa;">
-            <p>Gyaan Pravaha · Mumbai, India · gyaanpravaha.in</p>
+            <p>Gyaan Pravaha · Mumbai, India · gyaanpravaha.com</p>
           </div>
         </div>
       `

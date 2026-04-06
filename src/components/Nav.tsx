@@ -53,7 +53,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop nav */}
-        <ul style={{ display: 'flex', alignItems: 'center', listStyle: 'none', gap: '0.1rem', marginLeft: 'auto', marginRight: '1rem' }}>
+        <ul className="hide-mobile" style={{ display: 'flex', alignItems: 'center', listStyle: 'none', gap: '0.1rem', marginLeft: 'auto', marginRight: '1rem' }}>
           <li><Link href="/" style={linkStyle}>Home</Link></li>
           <li><Link href="/about" style={linkStyle}>About</Link></li>
 
@@ -101,8 +101,8 @@ export default function Nav() {
           <li><Link href="/insights" style={linkStyle}>Insights</Link></li>
         </ul>
 
-        <a href="https://gyaanpravaha-web.vercel.app/login" style={{ background: 'transparent', color: 'rgba(255,255,255,0.6)', padding: '0.55rem 1rem', borderRadius: '4px', fontWeight: 500, fontSize: '0.82rem', textDecoration: 'none', flexShrink: 0, border: '1px solid rgba(255,255,255,0.15)', marginRight: '0.5rem' }}>Login</a>
-        <Link href="/contact" style={{ background: '#c9a84c', color: '#0d1b2e', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', letterSpacing: '0.05em', textDecoration: 'none', flexShrink: 0 }}>Book a Call</Link>
+        <a href="https://gyaanpravaha-web.vercel.app/login" className="hide-mobile" style={{ background: 'transparent', color: 'rgba(255,255,255,0.6)', padding: '0.55rem 1rem', borderRadius: '4px', fontWeight: 500, fontSize: '0.82rem', textDecoration: 'none', flexShrink: 0, border: '1px solid rgba(255,255,255,0.15)', marginRight: '0.5rem' }}>Login</a>
+        <Link href="/contact" className="hide-mobile" style={{ background: '#c9a84c', color: '#0d1b2e', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', letterSpacing: '0.05em', textDecoration: 'none', flexShrink: 0 }}>Book a Call</Link>
 
         <button onClick={() => setMenuOpen(!menuOpen)} style={{ marginLeft: '1rem', background: 'none', border: 'none', color: 'white', fontSize: '1.5rem', cursor: 'pointer' }} aria-label="Menu">☰</button>
       </div>
