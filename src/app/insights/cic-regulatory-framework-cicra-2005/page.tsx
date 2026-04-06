@@ -122,6 +122,20 @@ export default function CICRegulatoryFrameworkArticle() {
           <p style={{ marginBottom: '1.25rem' }}>The single most important compliance date in the recent history of CIC regulation is July 1, 2026 — when the 4-Reference-Date reporting regime, uniform reporting standards, ARC CKYC reporting, and the revised DQI framework all come into force simultaneously. CICs that have not begun preparation for this transition by now are already at risk of non-compliance.</p>
           <p style={{ marginBottom: '2rem' }}>A structured gap assessment against all 21 instruments — not just the Master Directions — is the essential starting point for any CIC that wants to approach the July 2026 deadline with confidence.</p>
 
+          <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #e4ddd0' }}>
+            <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase', fontFamily: 'monospace', marginBottom: '1rem' }}>Related Articles</div>
+              <a href="/insights/cic-compliance-july-2026-deadline" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>CIC</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>July 1, 2026 — The Most Consequential CIC Compliance Deadline in a Decade</div>
+              </a>              <a href="/insights/cic-data-quality-index-rbi" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>DQI</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>RBI's Data Quality Index for Credit Information — What Every Credit Institution Must Know</div>
+              </a>              <a href="/insights/21-rbi-circulars-credit-information-nbfc" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>CIC</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>The 21 RBI Circulars on Credit Information Every NBFC Must Know</div>
+              </a>
+          </div>
+
           <div style={{ background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '8px', padding: '2rem', textAlign: 'center' }}>
             <p style={{ color: '#0d1b2e', fontWeight: 600, marginBottom: '0.5rem', fontSize: '1rem' }}>Need a gap assessment against all 21 instruments?</p>
             <p style={{ color: '#5a6a7a', marginBottom: '1.5rem', fontSize: '0.9rem' }}>A 30-minute discovery call will identify where your CIC compliance framework has gaps — and what to prioritise before July 2026.</p>

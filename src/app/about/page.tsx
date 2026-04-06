@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -43,7 +44,7 @@ export default function AboutPage() {
           </div>
           {/* Photo card */}
           <div style={{ background: 'rgba(201,168,76,0.06)', border: '1px solid rgba(201,168,76,0.2)', borderRadius: '12px', padding: '2rem', textAlign: 'center' as const }}>
-            <img src="/suresh-headshot.jpg" alt="Chelikani Veera Venkata Suresh Babu" style={{ width: '160px', height: '160px', borderRadius: '50%', objectFit: 'cover', border: '3px solid rgba(201,168,76,0.4)', display: 'block', margin: '0 auto 1.25rem' }} />
+            <Image src="/suresh-headshot.jpg" alt="Chelikani Veera Venkata Suresh Babu" width={160} height={160} style={{ borderRadius: '50%', objectFit: 'cover', border: '3px solid rgba(201,168,76,0.4)', display: 'block', margin: '0 auto 1.25rem' }} priority />
             <div style={{ fontFamily: 'Georgia, serif', fontSize: '0.95rem', color: '#c9a84c', fontWeight: 600, marginBottom: '0.3rem' }}>Chelikani Veera<br />Venkata Suresh Babu</div>
             <div style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.12em', textTransform: 'uppercase' as const, marginBottom: '1.5rem' }}>Independent Consultant</div>
             {[

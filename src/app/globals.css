@@ -17,14 +17,14 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   background: var(--cream);
   color: var(--text-dark);
   line-height: 1.7;
   overflow-x: hidden;
 }
 
-h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-height: 1.2; }
+h1, h2, h3 { font-family: var(--font-cormorant), 'Cormorant Garamond', serif; font-weight: 600; line-height: 1.2; }
 
 a { color: inherit; }
 
@@ -86,7 +86,7 @@ a { color: inherit; }
   width: 100%; padding: 0.75rem 1rem;
   border: 1px solid var(--border);
   border-radius: 4px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-dm-sans), 'DM Sans', sans-serif;
   font-size: 0.95rem;
   background: var(--white);
   color: var(--text-dark);
@@ -118,4 +118,36 @@ a { color: inherit; }
 /* Nav hamburger show on mobile */
 @media (max-width: 768px) {
   nav button[aria-label="Menu"] { display: block !important; }
+}
+
+/* Accessibility — focus-visible styles */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* Skip to content link — pure CSS, no JS */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 1rem;
+  z-index: 9999;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: top 0.15s;
+}
+.skip-link:focus {
+  top: 1rem;
 }

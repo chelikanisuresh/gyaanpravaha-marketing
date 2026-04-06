@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function InternalOmbudsmanArticle() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "NBFC Internal Ombudsman Directions 2026 \u2014 Who Must Appoint and What It Requires", "author": {"@type": "Person", "name": "Chelikani Veera Venkata Suresh Babu", "url": "https://gyaanpravaha.com/about"}, "publisher": {"@type": "Organization", "name": "Gyaan Pravaha", "url": "https://gyaanpravaha.com"}, "datePublished": "2026-04-06", "dateModified": "2026-04-06", "mainEntityOfPage": "https://gyaanpravaha.com/insights/nbfc-internal-ombudsman-directions-2026"}) }} />
       <section style={{ background: '#0d1b2e', padding: 'clamp(4rem, 8vw, 6rem) 2rem' }}>
         <div style={{ maxWidth: '780px', margin: '0 auto' }}>
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1.5rem' }}>
@@ -54,6 +55,17 @@ export default function InternalOmbudsmanArticle() {
           <h2 style={{ fontFamily: 'Georgia, serif', color: '#0d1b2e', fontSize: '1.7rem', marginBottom: '1rem', marginTop: '2.5rem' }}>Board Accountability — What the 2026 Directions Require from the Board</h2>
           <p style={{ marginBottom: '1.25rem' }}>The 2026 Directions embed Board accountability in a way the 2023 framework did not. The Board must approve the IO appointment, receive periodic reports from the IO, and ensure that systemic issues identified by the IO are addressed at a governance level. The IO must have direct access to the Board — not just the compliance function.</p>
           <p style={{ marginBottom: '2rem' }}>NBFCs where the IO reports only to the MD/CEO or the compliance team are not meeting the governance standard of the 2026 Directions. The IO must have an independent reporting line to the Board or a Board sub-committee — and the Board must demonstrate that it engages with IO reports substantively, not as a formality.</p>
+
+          <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #e4ddd0' }}>
+            <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase', fontFamily: 'monospace', marginBottom: '1rem' }}>Related Articles</div>
+              <a href="/insights/rbi-scale-based-regulation-middle-upper-layer-nbfc" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>SBR</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>RBI Scale-Based Regulation — Middle and Upper Layer NBFCs</div>
+              </a>              <a href="/insights/cic-consumer-protection-grievance-compensation" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>CONSUMER</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>CIC Consumer Protection — Rs.100/Day Compensation and the Grievance Framework</div>
+              </a>
+          </div>
 
           <div style={{ background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '8px', padding: '2rem', textAlign: 'center' }}>
             <p style={{ color: '#0d1b2e', fontWeight: 600, marginBottom: '0.5rem', fontSize: '1rem' }}>Is your Internal Ombudsman framework compliant with the 2026 Directions?</p>

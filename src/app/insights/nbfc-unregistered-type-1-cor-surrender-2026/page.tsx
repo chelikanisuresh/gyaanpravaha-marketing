@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function NBFCUnregisteredArticle() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "NBFC Type I Unregistered \u2014 Should Your NBFC Surrender Its RBI Certificate of Registration?", "author": {"@type": "Person", "name": "Chelikani Veera Venkata Suresh Babu", "url": "https://gyaanpravaha.com/about"}, "publisher": {"@type": "Organization", "name": "Gyaan Pravaha", "url": "https://gyaanpravaha.com"}, "datePublished": "2026-04-06", "dateModified": "2026-04-06", "mainEntityOfPage": "https://gyaanpravaha.com/insights/nbfc-unregistered-type-1-cor-surrender-2026"}) }} />
       <section style={{ background: '#0d1b2e', padding: 'clamp(4rem, 8vw, 6rem) 2rem' }}>
         <div style={{ maxWidth: '780px', margin: '0 auto' }}>
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1.5rem' }}>
@@ -57,6 +58,17 @@ export default function NBFCUnregisteredArticle() {
           <h2 style={{ fontFamily: 'Georgia, serif', color: '#0d1b2e', fontSize: '1.7rem', marginBottom: '1rem', marginTop: '2.5rem' }}>Why This Is Not Always the Right Decision</h2>
           <p style={{ marginBottom: '1.25rem' }}>Surrendering the CoR is a one-way decision in practice. Reacquiring an NBFC registration involves the full application process — minimum Net Owned Fund requirements, fit and proper certification, business plan approval, and RBI scrutiny. Entities that might access public funds or launch customer-facing products in the foreseeable future should be cautious.</p>
           <p style={{ marginBottom: '2rem' }}>There is also a regulatory arbitrage risk that RBI has flagged: entities could structure their activities to qualify as Unregistered Type I at year-end while effectively conducting regulated financial activities during the year. RBI has signalled that it will monitor for such patterns, and the consequences of being found to have violated the criteria after deregistration are severe.</p>
+
+          <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #e4ddd0' }}>
+            <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase', fontFamily: 'monospace', marginBottom: '1rem' }}>Related Articles</div>
+              <a href="/insights/rbi-scale-based-regulation-middle-upper-layer-nbfc" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>SBR</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>RBI Scale-Based Regulation — Middle and Upper Layer NBFCs</div>
+              </a>              <a href="/insights/nbfc-npa-90-days-base-layer-2026" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>SBR</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>90-Day NPA Classification — What Every Base Layer NBFC Must Do Now</div>
+              </a>
+          </div>
 
           <div style={{ background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '8px', padding: '2rem', textAlign: 'center' }}>
             <p style={{ color: '#0d1b2e', fontWeight: 600, marginBottom: '0.5rem', fontSize: '1rem' }}>Evaluating whether your entity qualifies to surrender its CoR?</p>

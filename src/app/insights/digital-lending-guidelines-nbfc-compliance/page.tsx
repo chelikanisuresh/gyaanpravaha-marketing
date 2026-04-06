@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Digital Lending Guidelines Two Years On — Where Most NBFCs Are Still Non-Compliant',
   description: 'A practitioner\'s analysis of NBFC compliance with RBI\'s Digital Lending Guidelines — LSP governance gaps, FLDG structure issues, KFS implementation failures, and what to do now.',
   keywords: ['Digital Lending Guidelines NBFC compliance', 'RBI Digital Lending 2022', 'LSP compliance NBFC', 'FLDG RBI guidelines', 'Key Fact Statement KFS', 'digital loan agreement RBI'],
-  alternates: { canonical: 'https://gyaanpravaha.in/insights/digital-lending-guidelines-nbfc-compliance' },
+  alternates: { canonical: 'https://gyaanpravaha.com/insights/digital-lending-guidelines-nbfc-compliance' },
   openGraph: {
     title: 'Digital Lending Guidelines Two Years On — Where Most NBFCs Are Still Non-Compliant',
     description: 'Practitioner analysis of Digital Lending Guidelines compliance gaps — LSP governance, FLDG caps, KFS, and digital loan agreements.',
@@ -20,12 +20,12 @@ export default function DigitalLendingArticle() {
         '@context': 'https://schema.org',
         '@type': 'Article',
         headline: 'Digital Lending Guidelines Two Years On — Where Most NBFCs Are Still Non-Compliant',
-        author: { '@type': 'Person', name: 'Chelikani Veera Venkata Suresh Babu', url: 'https://gyaanpravaha.in/about' },
-        publisher: { '@type': 'Organization', name: 'Gyaan Pravaha', url: 'https://gyaanpravaha.in' },
+        author: { '@type': 'Person', name: 'Chelikani Veera Venkata Suresh Babu', url: 'https://gyaanpravaha.com/about' },
+        publisher: { '@type': 'Organization', name: 'Gyaan Pravaha', url: 'https://gyaanpravaha.com' },
         datePublished: '2026-03-01',
         dateModified: '2026-03-01',
         keywords: 'Digital Lending Guidelines, NBFC compliance, RBI, LSP, FLDG, KFS',
-        mainEntityOfPage: 'https://gyaanpravaha.in/insights/digital-lending-guidelines-nbfc-compliance',
+        mainEntityOfPage: 'https://gyaanpravaha.com/insights/digital-lending-guidelines-nbfc-compliance',
       })}} />
 
       <section style={{ background: 'var(--navy)', padding: 'clamp(4rem, 8vw, 6rem) 2rem' }}>
@@ -64,6 +64,20 @@ export default function DigitalLendingArticle() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", color: 'var(--text-dark)', fontSize: '1.6rem', marginBottom: '1rem', marginTop: '2.5rem' }}>What to Do Now</h2>
           <p style={{ marginBottom: '1.25rem' }}>A structured compliance review of your digital lending operations should cover: LSP agreement audit against the mandatory clauses, FLDG exposure calculation and cap verification, KFS format and APR calculation review, digital loan agreement content check, and grievance redressal integration with LSP operations.</p>
           <p style={{ marginBottom: '2rem' }}>This is not a one-time exercise. The RBI's Digital Lending Guidelines require ongoing monitoring and annual board-level review of your digital lending compliance posture.</p>
+
+          <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #e4ddd0' }}>
+            <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase', fontFamily: 'monospace', marginBottom: '1rem' }}>Related Articles</div>
+              <a href="/insights/dpdpa-consent-management-digital-lending" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>DPDPA</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>DPDPA Consent Management for Digital Lending</div>
+              </a>              <a href="/insights/kyc-master-direction-2025-nbfc-changes" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>KYC</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>KYC Master Direction 2025 — What Changed</div>
+              </a>              <a href="/insights/nbfc-npa-90-days-base-layer-2026" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>SBR</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>90-Day NPA Classification — What Every Base Layer NBFC Must Do Now</div>
+              </a>
+          </div>
 
           <div style={{ background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '8px', padding: '2rem', textAlign: 'center' }}>
             <p style={{ color: 'var(--text-dark)', fontWeight: 600, marginBottom: '0.5rem' }}>Ready to review your Digital Lending Guidelines compliance?</p>

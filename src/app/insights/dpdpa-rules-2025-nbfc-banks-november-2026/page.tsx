@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function DPDPARulesArticle() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "DPDPA Rules 2025 \u2014 What Banks and NBFCs Must Complete Before November 2026", "author": {"@type": "Person", "name": "Chelikani Veera Venkata Suresh Babu", "url": "https://gyaanpravaha.com/about"}, "publisher": {"@type": "Organization", "name": "Gyaan Pravaha", "url": "https://gyaanpravaha.com"}, "datePublished": "2026-04-06", "dateModified": "2026-04-06", "mainEntityOfPage": "https://gyaanpravaha.com/insights/dpdpa-rules-2025-nbfc-banks-november-2026"}) }} />
       <section style={{ background: '#0d1b2e', padding: 'clamp(4rem, 8vw, 6rem) 2rem' }}>
         <div style={{ maxWidth: '780px', margin: '0 auto' }}>
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '1.5rem' }}>
@@ -65,6 +66,20 @@ export default function DPDPARulesArticle() {
           <h2 style={{ fontFamily: 'Georgia, serif', color: '#0d1b2e', fontSize: '1.7rem', marginBottom: '1rem', marginTop: '2.5rem' }}>The RBI–DPDPA Intersection — Where They Conflict</h2>
           <p style={{ marginBottom: '1.25rem' }}>RBI's KYC Master Direction requires NBFCs to collect Aadhaar, PAN, and address proof — and to share this data with credit bureaus. DPDPA requires explicit, purpose-specific consent for each such use. The interaction creates a genuine legal tension: KYC is mandatory under RBI directions, but DPDPA says the data subject's consent for each use must be specific and withdrawable.</p>
           <p style={{ marginBottom: '2rem' }}>The practical resolution is layered consent — separate consent items for KYC verification, CIC submission, marketing, and analytics — designed so that withdrawing marketing consent does not affect mandatory regulatory reporting. Getting this architecture right requires both legal and technical expertise working together.</p>
+
+          <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #e4ddd0' }}>
+            <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase', fontFamily: 'monospace', marginBottom: '1rem' }}>Related Articles</div>
+              <a href="/insights/dpdpa-consent-management-digital-lending" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>DPDPA</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>DPDPA Consent Management for Digital Lending — How the Act Redesigns Borrower Onboarding</div>
+              </a>              <a href="/insights/kyc-master-direction-2025-nbfc-changes" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>KYC</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>KYC Master Direction 2025 — What Changed and What Your NBFC Must Update Now</div>
+              </a>              <a href="/insights/dpdpa-2023-nbfc-compliance-guide" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>DPDPA</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>DPDPA 2023 — What Every NBFC Needs to Do Before the Rules Are Notified</div>
+              </a>
+          </div>
 
           <div style={{ background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '8px', padding: '2rem', textAlign: 'center' }}>
             <p style={{ color: '#0d1b2e', fontWeight: 600, marginBottom: '0.5rem', fontSize: '1rem' }}>Where does your institution stand on Phase 2 readiness?</p>

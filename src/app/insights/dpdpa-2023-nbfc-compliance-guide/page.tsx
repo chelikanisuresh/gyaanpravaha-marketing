@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'DPDPA 2023 — What Every NBFC Needs to Do Before the Rules Are Notified',
   description: 'A practitioner\'s guide to DPDPA 2023 compliance for NBFCs — consent framework, DPO mandate, vendor data contracts, breach notification, and building readiness before the Rules are notified.',
   keywords: ['DPDPA 2023 NBFC', 'Digital Personal Data Protection Act compliance', 'NBFC data protection', 'DPO NBFC India', 'DPDPA Rules India', 'data privacy NBFC India'],
-  alternates: { canonical: 'https://gyaanpravaha.in/insights/dpdpa-2023-nbfc-compliance-guide' },
+  alternates: { canonical: 'https://gyaanpravaha.com/insights/dpdpa-2023-nbfc-compliance-guide' },
   openGraph: { title: 'DPDPA 2023 — What Every NBFC Needs to Do Before the Rules Are Notified', type: 'article' },
 }
 
@@ -38,6 +38,17 @@ export default function DPDPAArticle() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", color: 'var(--text-dark)', fontSize: '1.6rem', marginBottom: '1rem', marginTop: '2.5rem' }}>The Penalty Exposure Is Not Theoretical</h2>
           <p style={{ marginBottom: '2rem' }}>Failure to implement adequate security safeguards carries a penalty of up to ₹250 Crore. Failure to notify a data breach carries up to ₹200 Crore. These are per-incident penalties, not annual caps. For an NBFC with thousands of customer records, a single breach event can create exposure that threatens the institution's capital adequacy.</p>
+
+          <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #e4ddd0' }}>
+            <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase', fontFamily: 'monospace', marginBottom: '1rem' }}>Related Articles</div>
+              <a href="/insights/dpdpa-rules-2025-nbfc-banks-november-2026" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>DPDPA</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>DPDPA Rules 2025 — What Banks and NBFCs Must Complete Before November 2026</div>
+              </a>              <a href="/insights/dpdpa-consent-management-digital-lending" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>DPDPA</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>DPDPA Consent Management for Digital Lending</div>
+              </a>
+          </div>
 
           <div style={{ background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '8px', padding: '2rem', textAlign: 'center' }}>
             <p style={{ color: 'var(--text-dark)', fontWeight: 600, marginBottom: '0.5rem' }}>Ready to assess your DPDPA readiness?</p>

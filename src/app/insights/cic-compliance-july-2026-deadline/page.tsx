@@ -126,6 +126,20 @@ export default function CICJuly2026Article() {
           <p style={{ marginBottom: '1.25rem' }}>The timeline to July 1, 2026 is short. CICs need to ensure their ingestion pipelines, rejection report systems, and DQI computation engines can handle four reference dates per month instead of two. Credit Institutions need to ensure their LMS/LOS systems can generate incremental files on the new reference dates with accurate categorisation of accounts.</p>
           <p style={{ marginBottom: '2rem' }}>The operational complexity of the transition should not be underestimated. The 4-reference-date regime requires not just a change to reporting schedules, but a fundamental reassessment of the data extraction, validation, and transmission processes that support credit information reporting.</p>
 
+          <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #e4ddd0' }}>
+            <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase', fontFamily: 'monospace', marginBottom: '1rem' }}>Related Articles</div>
+              <a href="/insights/cic-regulatory-framework-cicra-2005" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>CIC</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>CIC Regulatory Framework — CICRA 2005 and the 21 Instruments</div>
+              </a>              <a href="/insights/cic-data-quality-index-rbi" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>DQI</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>RBI's Data Quality Index — What Every Credit Institution Must Know</div>
+              </a>              <a href="/insights/arc-cic-reporting-obligations-rbi" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>ARC</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>ARC Obligations to CICs — What Asset Reconstruction Companies Must Now Report</div>
+              </a>
+          </div>
+
           <div style={{ background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '8px', padding: '2rem', textAlign: 'center' }}>
             <p style={{ color: '#0d1b2e', fontWeight: 600, marginBottom: '0.5rem', fontSize: '1rem' }}>Is your organisation ready for July 1, 2026?</p>
             <p style={{ color: '#5a6a7a', marginBottom: '1.5rem', fontSize: '0.9rem' }}>A structured readiness assessment will identify your gaps across reporting systems, DQI frameworks, and operational processes — with a prioritised action plan.</p>

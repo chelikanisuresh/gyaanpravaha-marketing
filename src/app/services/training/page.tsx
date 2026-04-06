@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -41,7 +42,7 @@ export default function TrainingPage() {
             <div style={{ display: 'flex', flexDirection: 'column' as const, gap: '1rem', minWidth: '280px' }}>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
                 <img src="/cholamandalam-training-1.jpg" alt="Felicitation at Cholamandalam training" style={{ width: '100%', borderRadius: '8px', objectFit: 'cover' as const, height: '180px' }} />
-                <img src="/cholamandalam-training-2.jpg" alt="Cholamandalam enterprise cyber risk training 2026" style={{ width: '100%', borderRadius: '8px', objectFit: 'cover' as const, height: '180px' }} />
+                <div style={{ position: 'relative', height: '180px', borderRadius: '8px', overflow: 'hidden' }}><Image src="/cholamandalam-training-2.jpg" alt="Cholamandalam enterprise cyber risk training 2026" fill style={{ objectFit: 'cover' }} /></div>
               </div>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' as const }}>
                 <span style={{ background: 'var(--navy)', color: 'var(--gold)', padding: '0.5rem 1.25rem', borderRadius: '4px', fontSize: '0.85rem', fontWeight: 600 }}>Cholamandalam Investment & Finance</span>

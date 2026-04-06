@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'The 21 RBI Circulars on Credit Information Every NBFC Compliance Head Must Know',
   description: 'A practitioner\'s guide to all 21 RBI circulars on credit information — CICRA 2005, bureau submission obligations, SMA reporting, dispute resolution, and what the 2025 Master Direction changes.',
   keywords: ['RBI credit information circulars', 'CICRA 2005 NBFC', '21 RBI circulars credit information', 'credit bureau compliance NBFC', 'CIBIL NBFC obligation', 'SMA reporting RBI', 'credit information master direction 2025'],
-  alternates: { canonical: 'https://gyaanpravaha.in/insights/21-rbi-circulars-credit-information-nbfc' },
+  alternates: { canonical: 'https://gyaanpravaha.com/insights/21-rbi-circulars-credit-information-nbfc' },
   openGraph: { title: 'The 21 RBI Circulars on Credit Information Every NBFC Compliance Head Must Know', type: 'article' },
 }
 
@@ -54,6 +54,20 @@ export default function CICArticle() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", color: 'var(--text-dark)', fontSize: '1.6rem', marginBottom: '1rem', marginTop: '2.5rem' }}>The Most Common Gaps</h2>
           <p style={{ marginBottom: '1.25rem' }}>The gaps we find most consistently across NBFCs: SMA-0 and SMA-1 accounts that are not being reported to bureaus on time; TUDF/Metro 2 format errors causing systematic rejection of records; dispute TAT breaches because the internal process does not loop in the bureau correction within the prescribed timeframe; and LMS systems that are generating incorrect NPA dates, creating downstream errors in bureau data.</p>
           <p style={{ marginBottom: '2rem' }}>These are not policy gaps — they are operational gaps that exist because the compliance obligation is not properly translated into the LMS system logic and the operations process. This is precisely where the combination of LMS experience and CIC compliance knowledge is critical.</p>
+
+          <div style={{ marginTop: '2.5rem', paddingTop: '2rem', borderTop: '1px solid #e4ddd0' }}>
+            <div style={{ fontSize: '0.7rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase', fontFamily: 'monospace', marginBottom: '1rem' }}>Related Articles</div>
+              <a href="/insights/cic-compliance-july-2026-deadline" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>CIC</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>July 1, 2026 — The Most Consequential CIC Compliance Deadline</div>
+              </a>              <a href="/insights/cic-data-quality-index-rbi" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>DQI</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>RBI's Data Quality Index for Credit Information</div>
+              </a>              <a href="/insights/arc-cic-reporting-obligations-rbi" style={{ display: 'block', textDecoration: 'none', padding: '0.75rem 1rem', background: '#fff', border: '1px solid #e4ddd0', borderRadius: '6px', marginBottom: '0.5rem' }}>
+                <span style={{ display: 'inline-block', fontSize: '0.6rem', padding: '0.15rem 0.5rem', borderRadius: '2px', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontFamily: 'monospace', letterSpacing: '0.08em', marginBottom: '0.3rem' }}>ARC</span>
+                <div style={{ fontSize: '0.88rem', color: '#0d1b2e', fontWeight: 500, lineHeight: 1.4 }}>ARC Obligations to CICs — What ARCs Must Now Report</div>
+              </a>
+          </div>
 
           <div style={{ background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '8px', padding: '2rem', textAlign: 'center' }}>
             <p style={{ color: 'var(--text-dark)', fontWeight: 600, marginBottom: '0.5rem' }}>Want a full review of your CIC compliance posture?</p>
