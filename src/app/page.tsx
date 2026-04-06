@@ -149,10 +149,12 @@ export default function HomePage() {
             New regulatory analysis delivered to your inbox — whenever a material RBI circular or amendment is published. No noise. No marketing. Just the compliance intelligence your institution needs.
           </p>
           <form
-            action="https://formspree.io/f/gyaanpravaha"
+            action="https://formspree.io/f/gyaanpravaha" data-turbo="false"
             method="POST"
             style={{ display: 'flex', gap: '0.75rem', maxWidth: '460px', margin: '0 auto', flexWrap: 'wrap' as const }}
           >
+            {/* Honeypot field — bots fill this, humans don't — Formspree ignores it */}
+            <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
             <input
               type="email"
               name="email"

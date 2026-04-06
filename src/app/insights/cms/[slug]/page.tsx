@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { createClient } from '@supabase/supabase-js'
+import { sanitizeHtml } from '@/lib/security'
 import ArticleEnhancements from '@/components/ArticleEnhancements'
 
 function getSupabase() {
@@ -76,7 +77,7 @@ export default async function CMSInsightPage({ params }: { params: { slug: strin
       <article style={{ padding: 'clamp(3rem, 6vw, 6rem) 2rem', background: '#faf7f2' }}>
         <div style={{ maxWidth: '780px', margin: '0 auto' }}>
           <div style={{ color: '#5a6a7a', lineHeight: 1.9, fontSize: '1rem' }}
-            dangerouslySetInnerHTML={{ __html: `<p style="margin:0;color:#5a6a7a;line-height:1.9;font-size:1rem">${renderMarkdown(insight.body)}</p>` }}
+            dangerouslySetInnerHTML={{ __html: sanitizeHtml(`<p style="margin:0;color:#5a6a7a;line-height:1.9;font-size:1rem">${renderMarkdown(insight.body)}</p>`) }}
           />
           <div style={{ marginTop: '3rem', background: 'rgba(201,168,76,0.08)', border: '1px solid rgba(201,168,76,0.3)', borderRadius: '8px', padding: '2rem', textAlign: 'center' }}>
             <p style={{ color: '#0d1b2e', fontWeight: 600, marginBottom: '0.5rem' }}>Navigating this regulation?</p>
