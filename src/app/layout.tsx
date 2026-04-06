@@ -5,7 +5,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://gyaanpravaha-marketing.vercel.app'
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://gyaanpravaha-marketing.vercel.app')
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: 'Gyaan Pravaha | RBI Compliance Advisory | NBFC | SFB | India',
     template: '%s | Gyaan Pravaha'
   },
-  description: 'Practitioner-grade BFSI advisory for Banks, NBFCs, and Small Finance Banks — RBI compliance, LOS/LMS technology, DPDPA, CIC, and credit advisory. 25+ years of institutional experience.',
+  description: 'Practitioner-grade RBI compliance & BFSI advisory for Banks, NBFCs, and SFBs. LOS/LMS, DPDPA, CIC advisory. 25+ years institutional experience. Mumbai.',
   keywords: [
     'RBI compliance advisory India',
     'NBFC regulatory compliance',
