@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import HeroAnimation from '@/components/HeroAnimation'
+import TestimonialsSection from '@/components/TestimonialsSection'
 
 export const metadata: Metadata = {
   title: 'RBI Compliance Advisory for NBFCs, SFBs & Banks | Gyaan Pravaha',
@@ -174,33 +175,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* TESTIMONIALS — placeholder until client quotes sourced */}
-      <section style={{ padding: 'clamp(3rem, 6vw, 5rem) 2rem', background: 'var(--navy)', borderTop: '1px solid var(--border-dark)' }}>
-        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: 'var(--gold)', marginBottom: '0.75rem', fontFamily: 'monospace' }}>What Clients Say</div>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: '#fff', marginBottom: '2.5rem' }}>Trusted by BFSI Leaders</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
-            {[1, 2, 3].map(i => (
-              <div key={i} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '8px', padding: '2rem', position: 'relative' as const }}>
-                {/* Quote mark */}
-                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '4rem', color: 'rgba(201,168,76,0.2)', lineHeight: 0.8, marginBottom: '1rem' }}>"</div>
-                {/* Placeholder text box */}
-                <div style={{ background: 'rgba(201,168,76,0.05)', border: '1px dashed rgba(201,168,76,0.2)', borderRadius: '4px', padding: '1rem', marginBottom: '1.5rem', minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.2)', fontFamily: 'monospace', letterSpacing: '0.1em' }}>CLIENT TESTIMONIAL — COMING SOON</span>
-                </div>
-                {/* Author placeholder */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(201,168,76,0.1)', border: '1px dashed rgba(201,168,76,0.25)', flexShrink: 0 }} />
-                  <div>
-                    <div style={{ width: '120px', height: '10px', background: 'rgba(255,255,255,0.08)', borderRadius: '2px', marginBottom: '6px' }} />
-                    <div style={{ width: '80px', height: '8px', background: 'rgba(255,255,255,0.05)', borderRadius: '2px' }} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection />
+
       <section style={{ background: 'var(--navy)', padding: 'clamp(4rem, 8vw, 6rem) 2rem', textAlign: 'center' as const }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: '#fff', marginBottom: '1rem' }}>Start with a Conversation.</h2>
