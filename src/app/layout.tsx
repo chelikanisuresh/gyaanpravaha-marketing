@@ -5,7 +5,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 
-const BASE_URL = 'https://gyaanpravaha.com'
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://gyaanpravaha-marketing.vercel.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
