@@ -39,7 +39,7 @@ function renderMarkdown(text: string): string {
     .replace(/^### (.+)$/gm, '<h3 style="font-family:Georgia,serif;font-size:1.25rem;color:#0d1b2e;margin:2rem 0 0.75rem;font-weight:600">$1</h3>')
     .replace(/\*\*(.+?)\*\*/g, '<strong style="color:#0d1b2e;font-weight:700">$1</strong>')
     .replace(/^- (.+)$/gm, '<li style="margin:0.4rem 0;color:#5a6a7a;line-height:1.75">$1</li>')
-    .replace(/(<li[^>]*>.*?<\/li>\n?)+/gs, '<ul style="padding-left:1.5rem;margin:1rem 0">$&</ul>')
+    .replace(/(<li[^>]*>[^<]*<\/li>\n?)+/gm, '<ul style="padding-left:1.5rem;margin:1rem 0">$&</ul>')
     .replace(/\n\n/g, '</p><p style="margin:1rem 0;color:#5a6a7a;line-height:1.9;font-size:1rem">')
 }
 
