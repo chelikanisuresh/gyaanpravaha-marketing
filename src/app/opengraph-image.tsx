@@ -60,7 +60,7 @@ export default async function Image() {
 
           {/* Stats row */}
           <div style={{ display: 'flex', gap: '48px' }}>
-            {[['25+', 'Years BFSI'], ['₹3L+Cr', 'Lending Book'], ['17+', 'Insight Articles']].map(([val, lbl]) => (
+            {[['25+', 'Years BFSI'], ['Rs.3L+Cr', 'Lending Book'], ['17+', 'Insight Articles']].map(([val, lbl]) => (
               <div key={lbl} style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
                 <span style={{ color: '#c9a84c', fontSize: '32px', fontWeight: 'bold' }}>{val}</span>
                 <span style={{ color: 'rgba(255,255,255,0.35)', fontSize: '13px', letterSpacing: '0.06em' }}>{lbl}</span>
