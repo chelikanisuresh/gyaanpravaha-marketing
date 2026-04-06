@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     canonical: BASE_URL,
   },
   verification: {
-    google: 'your-google-verification-code', // Add from Google Search Console
+    google: 'agxzHe9Co9U-gBdTbKuHZ4IDpL2wvBjrKNexBYjNno0',
   },
 }
 
