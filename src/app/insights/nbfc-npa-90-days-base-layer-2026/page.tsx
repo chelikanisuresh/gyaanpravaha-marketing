@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ArticleEnhancements from '@/components/ArticleEnhancements'
 
 export const metadata: Metadata = {
   title: '90-Day NPA Classification — What Every Base Layer NBFC Must Do Now',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function NPAArticle() {
   return (
     <>
+      <ArticleEnhancements />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "90-Day NPA Classification \u2014 What Every Base Layer NBFC Must Do Now", "author": {"@type": "Person", "name": "Chelikani Veera Venkata Suresh Babu", "url": "https://gyaanpravaha.com/about"}, "publisher": {"@type": "Organization", "name": "Gyaan Pravaha", "url": "https://gyaanpravaha.com"}, "datePublished": "2026-04-06", "dateModified": "2026-04-06", "mainEntityOfPage": "https://gyaanpravaha.com/insights/nbfc-npa-90-days-base-layer-2026"}) }} />
       <section style={{ background: '#0d1b2e', padding: 'clamp(4rem, 8vw, 6rem) 2rem' }}>
         <div style={{ maxWidth: '780px', margin: '0 auto' }}>

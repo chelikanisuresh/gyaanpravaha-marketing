@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ArticleEnhancements from '@/components/ArticleEnhancements'
 
 export const metadata: Metadata = {
   title: 'NBFC Type I Unregistered — Should Your NBFC Surrender Its RBI Certificate of Registration?',
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function NBFCUnregisteredArticle() {
   return (
     <>
+      <ArticleEnhancements />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "Article", "headline": "NBFC Type I Unregistered \u2014 Should Your NBFC Surrender Its RBI Certificate of Registration?", "author": {"@type": "Person", "name": "Chelikani Veera Venkata Suresh Babu", "url": "https://gyaanpravaha.com/about"}, "publisher": {"@type": "Organization", "name": "Gyaan Pravaha", "url": "https://gyaanpravaha.com"}, "datePublished": "2026-04-06", "dateModified": "2026-04-06", "mainEntityOfPage": "https://gyaanpravaha.com/insights/nbfc-unregistered-type-1-cor-surrender-2026"}) }} />
       <section style={{ background: '#0d1b2e', padding: 'clamp(4rem, 8vw, 6rem) 2rem' }}>
         <div style={{ maxWidth: '780px', margin: '0 auto' }}>

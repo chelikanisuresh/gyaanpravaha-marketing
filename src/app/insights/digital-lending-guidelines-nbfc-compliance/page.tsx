@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ArticleEnhancements from '@/components/ArticleEnhancements'
 
 export const metadata: Metadata = {
   title: 'Digital Lending Guidelines Two Years On — Where Most NBFCs Are Still Non-Compliant',
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 export default function DigitalLendingArticle() {
   return (
     <>
+      <ArticleEnhancements />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Article',

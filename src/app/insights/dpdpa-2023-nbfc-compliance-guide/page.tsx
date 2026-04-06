@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ArticleEnhancements from '@/components/ArticleEnhancements'
 
 export const metadata: Metadata = {
   title: 'DPDPA 2023 — What Every NBFC Needs to Do Before the Rules Are Notified',

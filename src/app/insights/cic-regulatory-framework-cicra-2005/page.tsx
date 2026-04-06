@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ArticleEnhancements from '@/components/ArticleEnhancements'
 
 export const metadata: Metadata = {
   title: 'CIC Regulatory Framework — CICRA 2005 and 21 Instruments Every CIC Must Know',
@@ -41,6 +42,7 @@ const INSTRUMENTS = [
 export default function CICRegulatoryFrameworkArticle() {
   return (
     <>
+      <ArticleEnhancements />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Article',

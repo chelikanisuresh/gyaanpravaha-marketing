@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ArticleEnhancements from '@/components/ArticleEnhancements'
 
 export const metadata: Metadata = {
   title: 'July 1, 2026 CIC Compliance Deadline — The 4-Reference-Date Reporting Regime Explained',
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
 export default function CICJuly2026Article() {
   return (
     <>
+      <ArticleEnhancements />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Article',

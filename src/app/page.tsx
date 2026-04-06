@@ -39,9 +39,9 @@ export default function HomePage() {
             <div style={{ fontSize: '0.7rem', color: 'rgba(201,168,76,0.7)', letterSpacing: '0.2em', textTransform: 'uppercase' as const, marginBottom: '1.5rem', fontFamily: 'monospace' }}>
               Independent BFSI Advisor · Mumbai, India
             </div>
-            <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(2.2rem, 5vw, 3.8rem)', color: '#fff', fontWeight: 700, lineHeight: 1.1, marginBottom: '1.5rem' }}>
+            <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2.2rem, 5vw, 3.8rem)', color: '#fff', fontWeight: 700, lineHeight: 1.1, marginBottom: '1.5rem' }}>
               RBI Compliance &amp; BFSI Advisory<br />
-              <span style={{ color: '#c9a84c' }}>That Comes From Within.</span>
+              <span style={{ color: 'var(--gold)' }}>That Comes From Within.</span>
             </h1>
             <p style={{ fontSize: '1.05rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.8, marginBottom: '2rem' }}>
               Practitioner-grade advisory for Banks, NBFCs, and Small Finance Banks — across 6 practice areas and 2 SaaS products.
@@ -53,7 +53,7 @@ export default function HomePage() {
             <div style={{ display: 'flex', gap: '2rem' }}>
               {[{ val: '25+', lbl: 'Years BFSI' }, { val: '₹3L+Cr', lbl: 'Lending Book' }, { val: '200+', lbl: 'Securitisations' }].map(s => (
                 <div key={s.lbl}>
-                  <div style={{ fontFamily: 'Georgia, serif', fontSize: '1.5rem', fontWeight: 700, color: '#c9a84c' }}>{s.val}</div>
+                  <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', fontWeight: 700, color: 'var(--gold)' }}>{s.val}</div>
                   <div style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.08em', marginTop: '2px' }}>{s.lbl}</div>
                 </div>
               ))}
@@ -63,32 +63,32 @@ export default function HomePage() {
         <HeroAnimation />
       </section>
 
-      <section style={{ background: '#132338', borderBottom: '1px solid #2a3f58', padding: '2rem' }}>
+      <section style={{ background: 'var(--navy-mid)', borderBottom: '1px solid var(--border-dark)', padding: '2rem' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '2rem', textAlign: 'center' as const }}>
           {STATS.map(s => (
             <div key={s.label}>
-              <div style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 700, color: '#c9a84c' }}>{s.value}</div>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 700, color: 'var(--gold)' }}>{s.value}</div>
               <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.45)', marginTop: '0.25rem' }}>{s.label}</div>
             </div>
           ))}
         </div>
       </section>
 
-      <section style={{ padding: 'clamp(3rem, 6vw, 6rem) 2rem', background: '#faf7f2' }}>
+      <section style={{ padding: 'clamp(3rem, 6vw, 6rem) 2rem', background: 'var(--cream)' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: '#c9a84c', marginBottom: '0.75rem' }}>Advisory Practice Areas</div>
-          <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: '#0d1b2e', marginBottom: '1rem' }}>Six Integrated Practices</h2>
-          <p style={{ color: '#5a6a7a', maxWidth: '600px', marginBottom: '3rem', fontSize: '1rem', lineHeight: 1.7 }}>
+          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: 'var(--gold)', marginBottom: '0.75rem' }}>Advisory Practice Areas</div>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: 'var(--navy)', marginBottom: '1rem' }}>Six Integrated Practices</h2>
+          <p style={{ color: 'var(--text-muted)', maxWidth: '600px', marginBottom: '3rem', fontSize: '1rem', lineHeight: 1.7 }}>
             Each draws on direct, institutional experience — not desk research.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
             {SERVICES.map(svc => (
               <Link key={svc.href} href={svc.href} style={{ textDecoration: 'none', display: 'block' }}>
-                <div style={{ background: '#fff', border: '1px solid #e4ddd0', borderRadius: '8px', padding: '2rem', height: '100%' }}>
+                <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '2rem', height: '100%' }}>
                   <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>{svc.icon}</div>
-                  <div style={{ fontSize: '0.6rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '0.5rem' }}>{svc.practice}</div>
-                  <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.35rem', color: '#0d1b2e', marginBottom: '0.75rem', fontWeight: 600 }}>{svc.title}</h3>
-                  <p style={{ fontSize: '0.88rem', color: '#5a6a7a', lineHeight: 1.7 }}>{svc.desc}</p>
+                  <div style={{ fontSize: '0.6rem', color: 'var(--gold)', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '0.5rem' }}>{svc.practice}</div>
+                  <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.35rem', color: 'var(--navy)', marginBottom: '0.75rem', fontWeight: 600 }}>{svc.title}</h3>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>{svc.desc}</p>
                 </div>
               </Link>
             ))}
@@ -98,39 +98,39 @@ export default function HomePage() {
 
       <section style={{ padding: 'clamp(3rem, 6vw, 5rem) 2rem', background: 'rgba(201,168,76,0.05)', borderTop: '1px solid rgba(201,168,76,0.15)' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', textAlign: 'center' as const }}>
-          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: '#c9a84c', marginBottom: '0.75rem' }}>Products</div>
-          <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: '#0d1b2e', marginBottom: '0.75rem' }}>Built for India's Financial Institutions</h2>
-          <p style={{ color: '#5a6a7a', maxWidth: '580px', margin: '0 auto 2.5rem', fontSize: '1rem', lineHeight: 1.7 }}>
+          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: 'var(--gold)', marginBottom: '0.75rem' }}>Products</div>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: 'var(--navy)', marginBottom: '0.75rem' }}>Built for India's Financial Institutions</h2>
+          <p style={{ color: 'var(--text-muted)', maxWidth: '580px', margin: '0 auto 2.5rem', fontSize: '1rem', lineHeight: 1.7 }}>
             Two SaaS products built from practitioner experience — for compliance management and compliance learning.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', maxWidth: '800px', margin: '0 auto' }}>
-            <div style={{ background: '#fff', border: '1px solid #e4ddd0', borderRadius: '10px', padding: '2rem', textAlign: 'left' as const }}>
-              <div style={{ fontSize: '0.6rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '0.5rem' }}>Compliance Management</div>
-              <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.5rem', color: '#0d1b2e', marginBottom: '0.75rem', fontWeight: 700 }}>ComplianceOS</h3>
-              <p style={{ color: '#5a6a7a', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>731+ mapped RBI obligations, regulatory calendar, circular tracking, audit-ready reporting.</p>
-              <Link href="/complianceos" style={{ display: 'inline-block', background: '#c9a84c', color: '#0d1b2e', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', textDecoration: 'none' }}>Learn More</Link>
+            <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '10px', padding: '2rem', textAlign: 'left' as const }}>
+              <div style={{ fontSize: '0.6rem', color: 'var(--gold)', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '0.5rem' }}>Compliance Management</div>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', color: 'var(--navy)', marginBottom: '0.75rem', fontWeight: 700 }}>ComplianceOS</h3>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>731+ mapped RBI obligations, regulatory calendar, circular tracking, audit-ready reporting.</p>
+              <Link href="/complianceos" style={{ display: 'inline-block', background: 'var(--gold)', color: 'var(--navy)', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', textDecoration: 'none' }}>Learn More</Link>
             </div>
-            <div style={{ background: '#fff', border: '1px solid #e4ddd0', borderRadius: '10px', padding: '2rem', textAlign: 'left' as const }}>
-              <div style={{ fontSize: '0.6rem', color: '#c9a84c', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '0.5rem' }}>Compliance Learning</div>
-              <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.5rem', color: '#0d1b2e', marginBottom: '0.75rem', fontWeight: 700 }}>Learning</h3>
-              <p style={{ color: '#5a6a7a', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>Online compliance courses — RBI, DPDPA, Digital Lending, KYC/AML, CIC. Certificates included.</p>
-              <Link href="/learning" style={{ display: 'inline-block', background: '#c9a84c', color: '#0d1b2e', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', textDecoration: 'none' }}>Learn More</Link>
+            <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '10px', padding: '2rem', textAlign: 'left' as const }}>
+              <div style={{ fontSize: '0.6rem', color: 'var(--gold)', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '0.5rem' }}>Compliance Learning</div>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', color: 'var(--navy)', marginBottom: '0.75rem', fontWeight: 700 }}>Learning</h3>
+              <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>Online compliance courses — RBI, DPDPA, Digital Lending, KYC/AML, CIC. Certificates included.</p>
+              <Link href="/learning" style={{ display: 'inline-block', background: 'var(--gold)', color: 'var(--navy)', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', textDecoration: 'none' }}>Learn More</Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section style={{ padding: 'clamp(3rem, 6vw, 6rem) 2rem', background: '#faf7f2' }}>
+      <section style={{ padding: 'clamp(3rem, 6vw, 6rem) 2rem', background: 'var(--cream)' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: '#c9a84c', marginBottom: '0.75rem' }}>Insights</div>
-          <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: '#0d1b2e', marginBottom: '2rem' }}>From the Practice</h2>
+          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: 'var(--gold)', marginBottom: '0.75rem' }}>Insights</div>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: 'var(--navy)', marginBottom: '2rem' }}>From the Practice</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
             {BLOG_POSTS.map(post => (
               <Link key={post.href} href={post.href} style={{ textDecoration: 'none' }}>
-                <div style={{ background: '#fff', border: '1px solid #e4ddd0', borderRadius: '8px', padding: '2rem' }}>
-                  <span style={{ display: 'inline-block', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontSize: '0.6rem', letterSpacing: '0.12em', padding: '0.2rem 0.6rem', borderRadius: '2px', marginBottom: '0.75rem' }}>{post.badge}</span>
-                  <h3 style={{ fontFamily: 'Georgia, serif', fontSize: '1.1rem', color: '#0d1b2e', lineHeight: 1.4, fontWeight: 600 }}>{post.title}</h3>
-                  <div style={{ marginTop: '1rem', fontSize: '0.8rem', color: '#c9a84c', fontWeight: 600 }}>Read →</div>
+                <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '2rem' }}>
+                  <span style={{ display: 'inline-block', background: 'rgba(201,168,76,0.1)', color: 'var(--gold)', fontSize: '0.6rem', letterSpacing: '0.12em', padding: '0.2rem 0.6rem', borderRadius: '2px', marginBottom: '0.75rem' }}>{post.badge}</span>
+                  <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.1rem', color: 'var(--navy)', lineHeight: 1.4, fontWeight: 600 }}>{post.title}</h3>
+                  <div style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--gold)', fontWeight: 600 }}>Read →</div>
                 </div>
               </Link>
             ))}
@@ -138,9 +138,37 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section style={{ background: '#0d1b2e', padding: 'clamp(4rem, 8vw, 6rem) 2rem', textAlign: 'center' as const }}>
+
+      {/* TESTIMONIALS — placeholder until client quotes sourced */}
+      <section style={{ padding: 'clamp(3rem, 6vw, 5rem) 2rem', background: 'var(--navy)', borderTop: '1px solid var(--border-dark)' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: '#fff', marginBottom: '1rem' }}>Start with a Conversation.</h2>
+          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: 'var(--gold)', marginBottom: '0.75rem', fontFamily: 'monospace' }}>What Clients Say</div>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: '#fff', marginBottom: '2.5rem' }}>Trusted by BFSI Leaders</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+            {[1, 2, 3].map(i => (
+              <div key={i} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '8px', padding: '2rem', position: 'relative' as const }}>
+                {/* Quote mark */}
+                <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '4rem', color: 'rgba(201,168,76,0.2)', lineHeight: 0.8, marginBottom: '1rem' }}>"</div>
+                {/* Placeholder text box */}
+                <div style={{ background: 'rgba(201,168,76,0.05)', border: '1px dashed rgba(201,168,76,0.2)', borderRadius: '4px', padding: '1rem', marginBottom: '1.5rem', minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.2)', fontFamily: 'monospace', letterSpacing: '0.1em' }}>CLIENT TESTIMONIAL — COMING SOON</span>
+                </div>
+                {/* Author placeholder */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'rgba(201,168,76,0.1)', border: '1px dashed rgba(201,168,76,0.25)', flexShrink: 0 }} />
+                  <div>
+                    <div style={{ width: '120px', height: '10px', background: 'rgba(255,255,255,0.08)', borderRadius: '2px', marginBottom: '6px' }} />
+                    <div style={{ width: '80px', height: '8px', background: 'rgba(255,255,255,0.05)', borderRadius: '2px' }} />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section style={{ background: 'var(--navy)', padding: 'clamp(4rem, 8vw, 6rem) 2rem', textAlign: 'center' as const }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(2rem, 4vw, 3.5rem)', color: '#fff', marginBottom: '1rem' }}>Start with a Conversation.</h2>
           <p style={{ color: 'rgba(255,255,255,0.55)', maxWidth: '500px', margin: '0 auto 2.5rem', fontSize: '1rem', lineHeight: 1.7 }}>
             A 30-minute discovery call is all it takes to identify which practice areas are most relevant to your institution.
           </p>
