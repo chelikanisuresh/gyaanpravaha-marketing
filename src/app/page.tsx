@@ -36,7 +36,7 @@ export default function HomePage() {
     <>
       <section style={{ background: 'var(--navy)', padding: 'clamp(4rem, 8vw, 7rem) 2rem', position: 'relative', overflow: 'hidden', minHeight: '480px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-          <div style={{ maxWidth: '520px' }}>
+          <div style={{ maxWidth: '520px', width: '100%' }}>
             <div style={{ fontSize: '0.7rem', color: 'rgba(201,168,76,0.7)', letterSpacing: '0.2em', textTransform: 'uppercase' as const, marginBottom: '1.5rem', fontFamily: 'monospace' }}>
               Independent BFSI Advisor · Mumbai, India
             </div>
@@ -62,6 +62,12 @@ export default function HomePage() {
           </div>
         </div>
         <HeroAnimation />
+        {/* Mobile hero visual fallback — visible only when canvas is hidden */}
+        <div style={{
+          position: 'absolute', right: 0, top: 0, width: '100%', height: '100%',
+          background: 'radial-gradient(ellipse at 80% 50%, rgba(201,168,76,0.06) 0%, transparent 70%)',
+          pointerEvents: 'none', zIndex: 0,
+        }} />
       </section>
 
       <section style={{ background: 'var(--navy-mid)', borderBottom: '1px solid var(--border-dark)', padding: '2rem' }}>

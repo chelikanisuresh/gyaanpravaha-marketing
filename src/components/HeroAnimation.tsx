@@ -199,7 +199,7 @@ export default function HeroAnimation() {
       className="hero-canvas"
       aria-hidden="true"
       role="presentation"
-      style={{ position: 'absolute', right: 0, top: 0, width: '58%', height: '100%', display: 'block' }}
+      style={{ position: 'absolute', right: 0, top: 0, width: '58%', height: '100%', display: 'block', pointerEvents: 'none' }}
     />
   )
 }
