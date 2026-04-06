@@ -1,25 +1,26 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Icon from '@/components/Icons'
 
 export const metadata: Metadata = {
   title: 'ComplianceOS — RBI Compliance Management Platform for NBFCs',
   description: 'ComplianceOS is the complete RBI compliance management platform for NBFCs and financial institutions. Obligation register, regulatory calendar, circular tracking, audit-ready reporting.',
   keywords: ['RBI compliance software', 'NBFC compliance platform', 'regulatory obligation register', 'ComplianceOS', 'RBI circular tracker', 'compliance management system India'],
-  alternates: { canonical: 'https://gyaanpravaha.in/complianceos' },
+  alternates: { canonical: 'https://gyaanpravaha.com/complianceos' },
   openGraph: {
     title: 'ComplianceOS — RBI Compliance Platform for NBFCs | Gyaan Pravaha',
     description: 'The complete RBI compliance management platform. Obligation register, regulatory calendar, circular tracking, audit-ready reporting.',
-    url: 'https://gyaanpravaha.in/complianceos',
+    url: 'https://gyaanpravaha.com/complianceos',
   },
 }
 
 const FEATURES = [
-  { icon: '📋', title: 'Obligation Register', desc: '731+ mapped obligations across all RBI Master Directions — section-wise, owner-tagged, frequency-tracked.' },
-  { icon: '📅', title: 'Regulatory Calendar', desc: '61 compliance deadlines — annual, quarterly, monthly — with institution-type filtering.' },
-  { icon: '📚', title: 'RBI Browser', desc: 'Live index of all Master Directions, Master Circulars, Draft Notifications, and NHB Circulars.' },
-  { icon: '⚠️', title: 'Upcoming Changes', desc: 'Notifications on amendments and new circulars — never miss a regulatory update again.' },
-  { icon: '🔍', title: 'RBI Monitor', desc: 'Automated weekly check of the RBI website for new Master Directions not yet in the platform.' },
-  { icon: '⚖️', title: 'Acts & Regulations', desc: 'Obligations under Companies Act, IT Act, DPDPA, SEBI, CICRA, PMLA, RERA, and more.' },
+  { icon: 'register' as const, title: 'Obligation Register', desc: '731+ mapped obligations across all RBI Master Directions — section-wise, owner-tagged, frequency-tracked.' },
+  { icon: 'calendar' as const, title: 'Regulatory Calendar', desc: '61 compliance deadlines — annual, quarterly, monthly — with institution-type filtering.' },
+  { icon: 'browser' as const, title: 'RBI Browser', desc: 'Live index of all Master Directions, Master Circulars, Draft Notifications, and NHB Circulars.' },
+  { icon: 'alert' as const, title: 'Upcoming Changes', desc: 'Notifications on amendments and new circulars — never miss a regulatory update again.' },
+  { icon: 'monitor' as const, title: 'RBI Monitor', desc: 'Automated weekly check of the RBI website for new Master Directions not yet in the platform.' },
+  { icon: 'scales' as const, title: 'Acts & Regulations', desc: 'Obligations under Companies Act, IT Act, DPDPA, SEBI, CICRA, PMLA, RERA, and more.' },
 ]
 
 const ENTITY_TYPES = ['Banks', 'NBFCs', 'Housing Finance Companies', 'Small Finance Banks', 'Microfinance Institutions', 'Credit Information Companies']
@@ -72,7 +73,7 @@ export default function ComplianceOSPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginTop: '3rem' }}>
             {FEATURES.map(f => (
               <div key={f.title} style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '2rem' }}>
-                <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{f.icon}</div>
+                <div style={{ marginBottom: '1rem' }}><Icon name={f.icon} size={32} color='var(--gold)' /></div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.25rem', color: 'var(--text-dark)', marginBottom: '0.6rem', fontWeight: 600 }}>{f.title}</h3>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>{f.desc}</p>
               </div>

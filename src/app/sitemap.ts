@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/insights/cic-data-quality-index-rbi`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/insights/arc-cic-reporting-obligations-rbi`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/insights/cic-consumer-protection-grievance-compensation`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/case-studies`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/insights/nbfc-npa-90-days-base-layer-2026`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/insights/dpdpa-rules-2025-nbfc-banks-november-2026`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE_URL}/insights/nbfc-internal-ombudsman-directions-2026`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },

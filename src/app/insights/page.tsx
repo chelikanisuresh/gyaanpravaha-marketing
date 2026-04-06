@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import InsightsFilter from '@/components/InsightsFilter'
 
 export const metadata: Metadata = {
   title: 'Insights — RBI Compliance, DPDPA, CIC & BFSI Advisory',
@@ -27,11 +27,6 @@ const ARTICLES = [
   { slug: 'dpdpa-consent-management-digital-lending', badge: 'DPDPA', date: 'June 2026', title: 'DPDPA Consent Management for Digital Lending — How the Act Redesigns Borrower Onboarding', excerpt: 'DPDPA requires separate, purpose-specific consent for every use of borrower data — bureau inquiry, bank statement analysis, CKYC, collection. What your LOS must be retrofitted to capture.', readTime: '10 min read' },
 ]
 
-const UPCOMING = [
-  { badge: 'LOS/LMS', title: 'LOS vs LMS — The Integration Gap That Costs NBFCs Crores in RBI Inspection Findings' },
-  { badge: 'RBI', title: 'RBI Master Directions 2025 — A Compliance Officer\'s Complete Guide' },
-  { badge: 'KYC', title: 'KYC Master Direction 2025 — What Changed and What Your NBFC Must Do Now' },
-]
 
 export default function InsightsPage() {
   return (
@@ -46,31 +41,7 @@ export default function InsightsPage() {
 
       <section style={{ padding: 'clamp(3rem, 6vw, 6rem) 2rem', background: '#faf7f2' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', marginBottom: '4rem' }}>
-            {ARTICLES.map(article => (
-              <Link key={article.slug} href={`/insights/${article.slug}`} style={{ textDecoration: 'none' }}>
-                <div style={{ background: '#fff', border: '1px solid #e4ddd0', borderRadius: '8px', padding: '2rem', height: '100%', display: 'flex', flexDirection: 'column' as const }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-                    <span style={{ display: 'inline-block', background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontSize: '0.6rem', letterSpacing: '0.12em', padding: '0.2rem 0.6rem', borderRadius: '2px' }}>{article.badge}</span>
-                    <span style={{ fontSize: '0.65rem', color: '#8a9ab0' }}>{article.date} · {article.readTime}</span>
-                  </div>
-                  <h2 style={{ fontFamily: 'Georgia, serif', fontSize: '1.25rem', color: '#0d1b2e', marginBottom: '0.75rem', fontWeight: 600, lineHeight: 1.4, flex: 1 }}>{article.title}</h2>
-                  <p style={{ fontSize: '0.88rem', color: '#5a6a7a', lineHeight: 1.7, marginBottom: '1.25rem' }}>{article.excerpt}</p>
-                  <div style={{ fontSize: '0.8rem', color: '#c9a84c', fontWeight: 600 }}>Read Article →</div>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          <div style={{ background: '#0d1b2e', borderRadius: '12px', padding: '2.5rem' }}>
-            <div style={{ fontSize: '0.65rem', color: 'rgba(201,168,76,0.6)', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '1.25rem' }}>Upcoming Articles</div>
-            {UPCOMING.map(a => (
-              <div key={a.title} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start', padding: '0.9rem 0', borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
-                <span style={{ background: 'rgba(201,168,76,0.1)', color: '#c9a84c', fontSize: '0.6rem', padding: '0.2rem 0.6rem', borderRadius: '2px', flexShrink: 0 }}>{a.badge}</span>
-                <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.5)', lineHeight: 1.5 }}>{a.title}</p>
-              </div>
-            ))}
-          </div>
+          <InsightsFilter articles={ARTICLES} />
         </div>
       </section>
     </>

@@ -21,7 +21,7 @@ const STATS = [
   { value: '25+', label: 'Years in BFSI' },
   { value: '₹3L+Cr', label: 'Lending Book at Axis Bank' },
   { value: '200+', label: 'Securitisation Transactions' },
-  { value: '3rd', label: 'NBFC — UIDAI eKYC Licence' },
+  { value: '26+', label: 'Institutions on ComplianceOS' },
 ]
 
 const BLOG_POSTS = [
@@ -138,6 +138,41 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* Newsletter subscription */}
+      <section style={{ padding: 'clamp(3rem, 5vw, 4rem) 2rem', background: 'rgba(201,168,76,0.05)', borderTop: '1px solid rgba(201,168,76,0.15)', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+        <div style={{ maxWidth: '640px', margin: '0 auto', textAlign: 'center' }}>
+          <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: 'var(--gold)', marginBottom: '0.75rem', fontFamily: 'monospace' }}>Regulatory Intelligence</div>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', color: 'var(--navy)', marginBottom: '0.75rem' }}>Stay Ahead of RBI Circulars</h2>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>
+            New regulatory analysis delivered to your inbox — whenever a material RBI circular or amendment is published. No noise. No marketing. Just the compliance intelligence your institution needs.
+          </p>
+          <form
+            action="https://formspree.io/f/gyaanpravaha"
+            method="POST"
+            style={{ display: 'flex', gap: '0.75rem', maxWidth: '460px', margin: '0 auto', flexWrap: 'wrap' as const }}
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="your@institution.com"
+              required
+              style={{
+                flex: 1, minWidth: '200px', padding: '0.75rem 1rem',
+                border: '1px solid var(--border)', borderRadius: '4px',
+                fontFamily: 'inherit', fontSize: '0.9rem',
+                background: '#fff', color: 'var(--navy)', outline: 'none',
+              }}
+            />
+            <button type="submit" className="btn-primary" style={{ whiteSpace: 'nowrap' as const }}>
+              Subscribe →
+            </button>
+          </form>
+          <p style={{ fontSize: '0.75rem', color: 'var(--text-light)', marginTop: '0.75rem' }}>
+            No spam. Unsubscribe anytime. Sent only when material regulatory changes occur.
+          </p>
+        </div>
+      </section>
 
       {/* TESTIMONIALS — placeholder until client quotes sourced */}
       <section style={{ padding: 'clamp(3rem, 6vw, 5rem) 2rem', background: 'var(--navy)', borderTop: '1px solid var(--border-dark)' }}>
