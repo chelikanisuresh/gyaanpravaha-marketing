@@ -133,9 +133,11 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true })
 
-  } catch {
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : String(err)
+    console.error('Contact API error:', message)
     return NextResponse.json(
-      { error: 'Something went wrong. Please try again or email us directly.' },
+      { error: 'Something went wrong. Please try again or email us directly.', detail: message },
       { status: 500 }
     )
   }
