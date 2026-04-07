@@ -42,7 +42,7 @@ export default function HeroAnimation() {
       W = canvas.offsetWidth; H = canvas.offsetHeight
       canvas.width = W * devicePixelRatio; canvas.height = H * devicePixelRatio
       ctx.scale(devicePixelRatio, devicePixelRatio)
-      cx = W * 0.5; cy = H * 0.5
+      cx = isMobile ? W * 0.5 : W * 0.5; cy = H * 0.5
     }
 
     const spos = (s: typeof SERVICES[0]) => { const a = s.angle + t * s.orbit; return { x: cx + Math.cos(a) * s.r, y: cy + Math.sin(a) * s.r } }
@@ -198,7 +198,7 @@ export default function HeroAnimation() {
       className="hero-canvas"
       aria-hidden="true"
       role="presentation"
-      style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', display: 'block', pointerEvents: 'none', opacity: typeof window !== 'undefined' && window.innerWidth < 900 ? 0.45 : 1 }}
+      style={{ position: 'absolute', right: 0, top: 0, width: '58%', height: '100%', display: 'block', pointerEvents: 'none' }}
     />
   )
 }
