@@ -35,7 +35,7 @@ export default function ContactForm() {
       setStatus('sent')
     } catch {
       setStatus('error')
-      setError('Something went wrong. Please email us directly at thornleyadvisoryservices@gmail.com')
+      setError('Something went wrong. Please email us directly at suresh@gyaanpravaha.com')
     }
   }
 

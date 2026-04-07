@@ -128,7 +128,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           description: 'Practitioner-grade BFSI advisory for Banks, NBFCs, and Small Finance Banks',
           address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressCountry: 'IN' },
           telephone: '+91-9833823262',
-          email: 'thornleyadvisoryservices@gmail.com',
+          email: 'suresh@gyaanpravaha.com',
           sameAs: ['https://linkedin.com/in/sureshchelikani'],
           hasOfferCatalog: {
             '@type': 'OfferCatalog',
