@@ -57,14 +57,19 @@ export async function POST(req: NextRequest) {
 
     // Save enquiry to Supabase
     try {
-      await getSupabase().from('enquiries').insert({
+      const supabase = getSupabase()
+      const { error: dbError } = await supabase.from('enquiries').insert({
         name, institution, email, phone,
         practice: practice || null,
         message: message || null,
       })
-    } catch {
-      // Don't fail the request if Supabase save fails — email still sends
-      console.error('Supabase insert failed')
+      if (dbError) {
+        console.error('Supabase insert error:', JSON.stringify(dbError))
+      } else {
+        console.log('Enquiry saved to Supabase successfully')
+      }
+    } catch (err) {
+      console.error('Supabase insert exception:', err)
     }
 
     const safeName        = escapeHtml(name)
