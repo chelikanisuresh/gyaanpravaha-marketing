@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { createClient } from '@supabase/supabase-js'
 import {
   escapeHtml,
   isValidEmail,
@@ -10,8 +11,14 @@ import {
 
 const TO_EMAIL = 'suresh@gyaanpravaha.com'
 
+function getSupabase() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  )
+}
+
 export async function POST(req: NextRequest) {
-  // Fix 4: Rate limiting — 3 requests per IP per hour
   const ip =
     req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ||
     req.headers.get('x-real-ip') ||
@@ -29,7 +36,6 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json()
 
-    // Fix 6: Truncate fields to prevent oversized payloads
     const name        = truncate(body.name, 200)
     const institution = truncate(body.institution, 200)
     const email       = truncate(body.email, 320)
@@ -37,7 +43,6 @@ export async function POST(req: NextRequest) {
     const practice    = truncate(body.practice, 200)
     const message     = truncate(body.message, 2000)
 
-    // Fix 6: Server-side presence + format validation
     if (!name || !institution || !email || !phone) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
     }
@@ -50,7 +55,18 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Invalid phone number' }, { status: 400 })
     }
 
-    // Fix 2: Escape all user inputs before embedding in HTML
+    // Save enquiry to Supabase
+    try {
+      await getSupabase().from('enquiries').insert({
+        name, institution, email, phone,
+        practice: practice || null,
+        message: message || null,
+      })
+    } catch {
+      // Don't fail the request if Supabase save fails — email still sends
+      console.error('Supabase insert failed')
+    }
+
     const safeName        = escapeHtml(name)
     const safeInstitution = escapeHtml(institution)
     const safeEmail       = escapeHtml(email)
@@ -58,11 +74,10 @@ export async function POST(req: NextRequest) {
     const safePractice    = escapeHtml(practice || 'Not specified')
     const safeMessage     = escapeHtml(message)
 
-    // Send notification to Suresh
     await resend.emails.send({
       from: 'Gyaan Pravaha Website <noreply@gyaanpravaha.com>',
       to: TO_EMAIL,
-      reply_to: email, // raw email for reply-to is fine (not embedded in HTML)
+      reply_to: email,
       subject: `New Discovery Call Request — ${safeInstitution}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; background: #f9f9f9; padding: 32px; border-radius: 8px;">
@@ -96,7 +111,6 @@ export async function POST(req: NextRequest) {
       `
     })
 
-    // Send confirmation to enquirer
     await resend.emails.send({
       from: 'Gyaan Pravaha <noreply@gyaanpravaha.com>',
       to: email,
@@ -120,7 +134,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: true })
 
   } catch {
-    // Fix 5: Never leak internal error messages to client
     return NextResponse.json(
       { error: 'Something went wrong. Please try again or email us directly.' },
       { status: 500 }
