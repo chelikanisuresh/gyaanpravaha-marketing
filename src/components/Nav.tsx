@@ -103,7 +103,7 @@ export default function Nav() {
           <li><Link href="/case-studies" style={linkStyle}>Case Studies</Link></li>
         </ul>
 
-        <a href="https://gyaanpravaha-web.vercel.app/login" className="hide-mobile" style={{ background: 'transparent', color: 'rgba(255,255,255,0.6)', padding: '0.55rem 1rem', borderRadius: '4px', fontWeight: 500, fontSize: '0.82rem', textDecoration: 'none', flexShrink: 0, border: '1px solid rgba(255,255,255,0.15)', marginRight: '0.5rem' }}>Login</a>
+        <a href="https://app.gyaanpravaha.com/login" className="hide-mobile" style={{ background: 'transparent', color: 'rgba(255,255,255,0.6)', padding: '0.55rem 1rem', borderRadius: '4px', fontWeight: 500, fontSize: '0.82rem', textDecoration: 'none', flexShrink: 0, border: '1px solid rgba(255,255,255,0.15)', marginRight: '0.5rem' }}>Login</a>
         <Link href="/contact" className="hide-mobile" style={{ background: '#c9a84c', color: '#0d1b2e', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', letterSpacing: '0.05em', textDecoration: 'none', flexShrink: 0 }}>Book a Call</Link>
 
         {/* Hamburger — always visible on mobile */}
