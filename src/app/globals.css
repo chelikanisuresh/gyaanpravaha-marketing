@@ -99,8 +99,9 @@ a { color: inherit; }
 .form-group textarea { min-height: 100px; resize: vertical; }
 .req { color: var(--gold); }
 
-@media (max-width: 768px) {
-  .hide-mobile { display: none; }
+@media (max-width: 900px) {
+  .hide-mobile { display: none !important; }
+  .show-mobile { display: flex !important; }
 }
 
 /* Mobile responsive fixes — Sprint 1 */
