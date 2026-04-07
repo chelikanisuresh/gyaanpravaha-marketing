@@ -34,7 +34,7 @@ const BLOG_POSTS = [
 export default function HomePage() {
   return (
     <>
-      <section style={{ background: 'var(--navy)', padding: 'clamp(4rem, 8vw, 7rem) 2rem', position: 'relative', overflow: 'hidden', minHeight: '480px' }}>
+      <section style={{ background: 'var(--navy)', padding: 'clamp(4rem, 8vw, 7rem) 2rem', position: 'relative', overflow: 'hidden', minHeight: '520px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
           <div style={{ maxWidth: '520px', width: '100%' }}>
             <div style={{ fontSize: '0.7rem', color: 'rgba(201,168,76,0.7)', letterSpacing: '0.2em', textTransform: 'uppercase' as const, marginBottom: '1.5rem', fontFamily: 'monospace' }}>
