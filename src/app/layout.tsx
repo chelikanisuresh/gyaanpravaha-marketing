@@ -149,7 +149,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script id="ga-init" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J14YW1SK3D');`
         }} />
-        <a href="#main-content" className="skip-link">Skip to content</a>
         <Nav />
         <main id="main-content">{children}</main>
         <Footer />
