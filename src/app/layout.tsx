@@ -105,43 +105,142 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="Gyaan Pravaha" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        {/* Structured Data — Person */}
+        {/* Schema.org — Person: Chelikani Veera Venkata Suresh Babu */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Person',
+          '@id': `${BASE_URL}/#person`,
           name: 'Chelikani Veera Venkata Suresh Babu',
-          jobTitle: 'Independent BFSI Advisor',
-          description: 'Senior BFSI advisor with 25+ years of experience in RBI compliance, LOS/LMS technology, DPDPA, and CIC advisory.',
-          url: BASE_URL,
-          sameAs: ['https://linkedin.com/in/sureshchelikani'],
-          address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressCountry: 'IN' },
-          worksFor: { '@type': 'Organization', name: 'Gyaan Pravaha' },
-          knowsAbout: ['RBI Compliance', 'NBFC Regulatory', 'LOS LMS Technology', 'DPDPA', 'Credit Information Companies', 'Digital Lending', 'KYC AML'],
+          alternateName: ['Suresh Babu', 'Suresh Chelikani', 'C V V Suresh Babu'],
+          jobTitle: 'Founder & Independent BFSI Advisor',
+          description: 'Senior BFSI practitioner with 25+ years of hands-on experience across India\'s leading banks and NBFCs. Former EVP at Piramal Finance and DVP at Axis Bank. Expert in RBI regulatory compliance, DPDPA, LOS/LMS technology, CIC advisory, and digital lending.',
+          url: `${BASE_URL}/about`,
+          image: `${BASE_URL}/suresh-headshot.jpg`,
+          email: 'suresh@gyaanpravaha.com',
+          telephone: '+91-9833823262',
+          sameAs: [
+            'https://linkedin.com/in/sureshchelikani',
+            'https://gyaanpravaha.com',
+            'https://gyaanpravaha.com/about',
+          ],
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '501, Pelican Building, Hiranandani Estate',
+            addressLocality: 'Thane',
+            addressRegion: 'Maharashtra',
+            postalCode: '400607',
+            addressCountry: 'IN'
+          },
+          worksFor: {
+            '@type': 'Organization',
+            name: 'Thornley Advisory Services Private Limited',
+            '@id': `${BASE_URL}/#organization`,
+          },
+          alumniOf: [
+            { '@type': 'Organization', name: 'Piramal Finance', description: 'Executive Vice President — Head Automation, Securitisation & DPO' },
+            { '@type': 'Organization', name: 'Axis Bank', description: 'Deputy Vice President — Credit Policy & Process Re-Engineering' },
+            { '@type': 'Organization', name: 'HDFC Bank', description: 'Executive — Retail Lending & Operations' },
+            { '@type': 'Organization', name: 'Reliance Capital', description: 'Manager — Credit & Risk' },
+            { '@type': 'Organization', name: 'SREI BNP Paribas', description: 'Senior Manager — Equipment Finance & Credit' },
+          ],
+          knowsAbout: [
+            'RBI Regulatory Compliance',
+            'NBFC Scale-Based Regulation',
+            'Digital Personal Data Protection Act 2023',
+            'Loan Origination System',
+            'Loan Management System',
+            'Credit Information Companies',
+            'CICRA 2005',
+            'KYC AML CFT',
+            'Securitisation',
+            'Digital Lending Guidelines',
+            'NPA Classification',
+            'Credit Risk Management',
+          ],
+          hasCredential: [
+            { '@type': 'EducationalOccupationalCredential', name: 'CPD Certified Data Protection Officer', credentialCategory: 'Professional Certification' },
+            { '@type': 'EducationalOccupationalCredential', name: 'FCRF Certified Data Protection Officer', credentialCategory: 'Professional Certification' },
+            { '@type': 'EducationalOccupationalCredential', name: 'FCRF Certified Cyber Law Practitioner', credentialCategory: 'Professional Certification' },
+            { '@type': 'EducationalOccupationalCredential', name: 'GRC Professional', credentialCategory: 'Professional Certification' },
+          ],
         })}} />
-        {/* Structured Data — Organization */}
+
+        {/* Schema.org — Organization: Thornley Advisory Services */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
-          '@type': 'ProfessionalService',
-          name: 'Gyaan Pravaha',
+          '@type': ['Organization', 'ProfessionalService'],
+          '@id': `${BASE_URL}/#organization`,
+          name: 'Thornley Advisory Services Private Limited',
+          alternateName: ['Gyaan Pravaha', 'Thornley Advisory'],
+          legalName: 'Thornley Advisory Services Private Limited',
           url: BASE_URL,
-          logo: `${BASE_URL}/logo.svg`,
-          description: 'Practitioner-grade BFSI advisory for Banks, NBFCs, and Small Finance Banks',
-          address: { '@type': 'PostalAddress', addressLocality: 'Mumbai', addressCountry: 'IN' },
+          logo: `${BASE_URL}/favicon.svg`,
+          image: `${BASE_URL}/og-image.png`,
+          description: 'Thane-based compliance and regulatory advisory firm serving India\'s BFSI sector. Specialises in RBI Regulatory Compliance, DPDPA 2023, LOS/LMS Technology Advisory, Credit Consulting, and CIC/CICRA frameworks. CIN: U70200MH2026PTC468366.',
+          foundingDate: '2026',
+          identifier: {
+            '@type': 'PropertyValue',
+            name: 'CIN',
+            value: 'U70200MH2026PTC468366'
+          },
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '501, Pelican Building, Hiranandani Estate',
+            addressLocality: 'Thane',
+            addressRegion: 'Maharashtra',
+            postalCode: '400607',
+            addressCountry: 'IN'
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: '19.2403',
+            longitude: '72.9795'
+          },
           telephone: '+91-9833823262',
           email: 'suresh@gyaanpravaha.com',
-          sameAs: ['https://linkedin.com/in/sureshchelikani'],
+          founder: {
+            '@type': 'Person',
+            '@id': `${BASE_URL}/#person`,
+            name: 'Chelikani Veera Venkata Suresh Babu',
+          },
+          employee: {
+            '@type': 'Person',
+            '@id': `${BASE_URL}/#person`,
+            name: 'Chelikani Veera Venkata Suresh Babu',
+          },
+          areaServed: {
+            '@type': 'Country',
+            name: 'India'
+          },
+          sameAs: [
+            'https://linkedin.com/in/sureshchelikani',
+            'https://gyaanpravaha.com',
+          ],
+          knowsAbout: [
+            'RBI Regulatory Compliance',
+            'NBFC Advisory',
+            'Digital Personal Data Protection Act 2023',
+            'Loan Origination System Advisory',
+            'Credit Information Companies',
+            'CICRA 2005',
+            'Digital Lending Guidelines',
+          ],
           hasOfferCatalog: {
             '@type': 'OfferCatalog',
-            name: 'Advisory Services',
+            name: 'BFSI Advisory Services',
             itemListElement: [
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'RBI Regulatory Compliance Advisory' } },
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LOS/LMS Technology Advisory' } },
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DPDPA Compliance Advisory' } },
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'CIC Advisory' } },
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Credit & Institutional Advisory' } },
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Corporate Training' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'RBI Regulatory Compliance Advisory', provider: { '@id': `${BASE_URL}/#organization` } } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'LOS/LMS Technology Advisory', provider: { '@id': `${BASE_URL}/#organization` } } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DPDPA 2023 Compliance Advisory', provider: { '@id': `${BASE_URL}/#organization` } } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'CIC Advisory — CICRA 2005', provider: { '@id': `${BASE_URL}/#organization` } } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Credit & Institutional Consulting', provider: { '@id': `${BASE_URL}/#organization` } } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Corporate Training for BFSI', provider: { '@id': `${BASE_URL}/#organization` } } },
             ]
-          }
+          },
+          makesOffer: [
+            { '@type': 'Offer', itemOffered: { '@type': 'SoftwareApplication', name: 'ComplianceOS', applicationCategory: 'BusinessApplication', url: `${BASE_URL}/complianceos` } },
+            { '@type': 'Offer', itemOffered: { '@type': 'SoftwareApplication', name: 'Gyaan Pravaha Learning', applicationCategory: 'EducationalApplication', url: `${BASE_URL}/learning` } },
+          ]
         })}} />
       </head>
       <body>
