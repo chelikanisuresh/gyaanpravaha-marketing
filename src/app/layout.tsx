@@ -122,6 +122,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             'https://linkedin.com/in/sureshchelikani',
             'https://gyaanpravaha.com',
             'https://gyaanpravaha.com/about',
+            'https://www.wikidata.org/wiki/Q139005899',
           ],
           address: {
             '@type': 'PostalAddress',
@@ -215,6 +216,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           sameAs: [
             'https://linkedin.com/in/sureshchelikani',
             'https://gyaanpravaha.com',
+            'https://www.wikidata.org/wiki/Q139005690',
           ],
           knowsAbout: [
             'RBI Regulatory Compliance',
