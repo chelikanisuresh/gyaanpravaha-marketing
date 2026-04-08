@@ -161,7 +161,11 @@ export default function Nav() {
             </Link>
           ))}
 
-          <div style={{ padding: '1rem 1.5rem 0' }}>
+          <div style={{ padding: '1rem 1.5rem 0', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <a href="https://app.gyaanpravaha.com/login"
+              style={{ display: 'block', background: 'transparent', color: 'rgba(255,255,255,0.7)', padding: '0.9rem', borderRadius: '4px', fontWeight: 500, fontSize: '0.95rem', textDecoration: 'none', textAlign: 'center', border: '1px solid rgba(255,255,255,0.15)' }}>
+              Login
+            </a>
             <Link href="/contact" onClick={() => setMenuOpen(false)}
               style={{ display: 'block', background: '#c9a84c', color: '#0d1b2e', padding: '0.9rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.95rem', textDecoration: 'none', textAlign: 'center' }}>
               Book a Discovery Call
