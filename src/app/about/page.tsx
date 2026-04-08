@@ -36,7 +36,8 @@ export default function AboutPage() {
             <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(2rem, 4vw, 3rem)', color: '#fff', marginBottom: '0.5rem', lineHeight: 1.1 }}>Chelikani Veera<br />Venkata Suresh Babu</h1>
             <p style={{ fontSize: '0.75rem', color: 'rgba(201,168,76,0.7)', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '1.5rem' }}>Independent Consultant · Senior BFSI Advisor · Mumbai</p>
             <p style={{ color: 'rgba(255,255,255,0.65)', lineHeight: 1.8, fontSize: '0.97rem', marginBottom: '1.5rem' }}>Senior financial sector practitioner with over 25 years of hands-on leadership across India's top banking and non-banking financial institutions — at the intersection of lending technology, RBI regulatory compliance, and digital data protection.</p>
-            <p style={{ color: 'rgba(255,255,255,0.65)', lineHeight: 1.8, fontSize: '0.97rem', marginBottom: '2rem' }}>Deep cross-institutional knowledge from Piramal Finance, Axis Bank, HDFC Bank, Reliance Capital, and SREI BNP Paribas.</p>
+            <p style={{ color: 'rgba(255,255,255,0.65)', lineHeight: 1.8, fontSize: '0.97rem', marginBottom: '1.5rem' }}>Deep cross-institutional knowledge from Piramal Finance, Axis Bank, HDFC Bank, Reliance Capital, and SREI BNP Paribas.</p>
+            <p style={{ color: 'rgba(255,255,255,0.4)', lineHeight: 1.8, fontSize: '0.82rem', marginBottom: '2rem' }}>Founder & Director, Thornley Advisory Services Private Limited (CIN: U70200MH2026PTC468366) · Hiranandani Estate, Thane, Maharashtra</p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' as const }}>
               <Link href="/contact" className="btn-primary">Book a Discovery Call</Link>
               <a href="https://linkedin.com/in/sureshchelikani" target="_blank" rel="noreferrer" className="btn-outline">LinkedIn Profile ↗</a>

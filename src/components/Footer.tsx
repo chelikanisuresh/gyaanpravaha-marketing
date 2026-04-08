@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
 
         <div style={{ borderTop: '1px solid var(--border-dark)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
-          <p style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.3)' }}>© {new Date().getFullYear()} Gyaan Pravaha. All rights reserved.</p>
+          <p style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.3)' }}>© {new Date().getFullYear()} Gyaan Pravaha — A brand of Thornley Advisory Services Private Limited. CIN: U70200MH2026PTC468366. All rights reserved.</p>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             {['/privacy', '/terms'].map(href => (
               <Link key={href} href={href} style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.3)', textDecoration: 'none' }}>
