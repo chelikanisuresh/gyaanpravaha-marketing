@@ -20,9 +20,9 @@ const CERTS = [
   { year: '2024', title: 'CPD Certified Data Protection Officer', org: 'Alison (CPD)' },
   { year: '2024', title: 'Cyber Frauds & Risk Management for BFSI', org: 'ASCI' },
   { year: '2023', title: 'Harvard Leadership Playbook', org: 'Harvard Business Publishing' },
-  { year: '2022', title: 'GRC Professional', org: 'OCEG' },
-  { year: '2022', title: 'Cyber Law', org: 'Asian School of Cyber Laws' },
-  { year: '2020', title: 'GDPR Practitioner', org: 'ISACA' },
+  { year: '2022', title: 'GRC Professional', org: 'FCRF' },
+  { year: '2022', title: 'Certified Cyber Law Practitioner', org: 'FCRF' },
+  { year: '2022', title: 'Certified Data Protection Officer', org: 'FCRF' },
 ]
 
 export default function AboutPage() {
