@@ -217,6 +217,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             'https://linkedin.com/in/sureshchelikani',
             'https://gyaanpravaha.com',
             'https://www.wikidata.org/wiki/Q139005690',
+            'https://www.linkedin.com/company/thornley-advisory-services',
           ],
           knowsAbout: [
             'RBI Regulatory Compliance',
