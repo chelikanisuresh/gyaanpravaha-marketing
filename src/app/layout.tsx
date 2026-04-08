@@ -238,8 +238,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             ]
           },
           makesOffer: [
-            { '@type': 'Offer', itemOffered: { '@type': 'SoftwareApplication', name: 'ComplianceOS', applicationCategory: 'BusinessApplication', url: `${BASE_URL}/complianceos` } },
-            { '@type': 'Offer', itemOffered: { '@type': 'SoftwareApplication', name: 'Gyaan Pravaha Learning', applicationCategory: 'EducationalApplication', url: `${BASE_URL}/learning` } },
+            { '@type': 'Offer', itemOffered: {
+              '@type': 'SoftwareApplication',
+              name: 'ComplianceOS',
+              applicationCategory: 'BusinessApplication',
+              operatingSystem: 'Web',
+              url: `${BASE_URL}/complianceos`,
+              description: 'RBI compliance management platform for Banks, NBFCs, SFBs and HFCs — 731+ mapped obligations, regulatory calendar, and circular tracking.',
+              offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR', description: 'Contact for pricing' }
+            }},
+            { '@type': 'Offer', itemOffered: {
+              '@type': 'SoftwareApplication',
+              name: 'Gyaan Pravaha Learning',
+              applicationCategory: 'EducationalApplication',
+              operatingSystem: 'Web',
+              url: `${BASE_URL}/learning`,
+              description: 'Online compliance training platform for BFSI professionals — RBI, DPDPA, Digital Lending, KYC/AML, CIC courses with certificates.',
+              offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR', description: 'Contact for pricing' }
+            }},
           ]
         })}} />
       </head>
