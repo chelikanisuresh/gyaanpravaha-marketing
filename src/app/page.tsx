@@ -123,6 +123,13 @@ export default function HomePage() {
               <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>Online compliance courses — RBI, DPDPA, Digital Lending, KYC/AML, CIC. Certificates included.</p>
               <Link href="/learning" style={{ display: 'inline-block', background: 'var(--gold)', color: 'var(--navy)', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', textDecoration: 'none' }}>Learn More</Link>
             </div>
+            <div style={{ background: 'var(--navy)', border: '2px solid var(--gold)', borderRadius: '10px', padding: '2rem', textAlign: 'left' as const, position: 'relative' as const }}>
+              <div style={{ position: 'absolute' as const, top: '-12px', left: '1.5rem', background: 'var(--gold)', color: 'var(--navy)', fontSize: '0.55rem', fontWeight: 800, padding: '3px 12px', borderRadius: '20px', letterSpacing: '0.15em' }}>PREMIUM · NEW</div>
+              <div style={{ fontSize: '0.6rem', color: 'rgba(201,168,76,0.7)', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '0.5rem' }}>Data Risk Intelligence</div>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', color: '#c9a84c', marginBottom: '0.75rem', fontWeight: 700 }}>DRIP</h3>
+              <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: '1.5rem' }}>DPDPA compliance scanning — detects Aadhaar, PAN, bank accounts across every branch machine. On-premise, VAPT-clean.</p>
+              <Link href="/drip" style={{ display: 'inline-block', background: 'var(--gold)', color: 'var(--navy)', padding: '0.6rem 1.25rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.85rem', textDecoration: 'none' }}>Learn More</Link>
+            </div>
           </div>
         </div>
       </section>

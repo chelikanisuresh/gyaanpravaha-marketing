@@ -39,6 +39,7 @@ export default function Footer() {
             {[
               { href: '/complianceos', label: 'ComplianceOS', sub: 'RBI Compliance Platform' },
               { href: '/learning', label: 'Learning', sub: 'Online Compliance Courses' },
+              { href: '/drip', label: 'DRIP', sub: 'Data Risk Intelligence' },
             ].map(link => (
               <Link key={link.href} href={link.href} style={{ display: 'block', textDecoration: 'none', marginBottom: '0.9rem' }}>
                 <div style={{ fontSize: '0.85rem', color: '#c9a84c', fontWeight: 600, marginBottom: '1px' }}>{link.label}</div>
