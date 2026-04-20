@@ -14,6 +14,7 @@ const SERVICES = [
 const PRODUCTS = [
   { href: '/complianceos', label: 'ComplianceOS', sub: 'RBI Compliance Management Platform' },
   { href: '/learning', label: 'Learning', sub: 'Online Compliance Courses for BFSI' },
+  { href: '/drip', label: 'DRIP', sub: 'Data Risk Intelligence Platform — DPDPA' },
 ]
 
 const dropdownStyle = {

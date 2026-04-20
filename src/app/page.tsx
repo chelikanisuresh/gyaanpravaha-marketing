@@ -108,9 +108,9 @@ export default function HomePage() {
           <div style={{ fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' as const, color: 'var(--gold)', marginBottom: '0.75rem' }}>Products</div>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', color: 'var(--navy)', marginBottom: '0.75rem' }}>Built for India's Financial Institutions</h2>
           <p style={{ color: 'var(--text-muted)', maxWidth: '580px', margin: '0 auto 2.5rem', fontSize: '1rem', lineHeight: 1.7 }}>
-            Two SaaS products built from practitioner experience — for compliance management and compliance learning.
+            Three SaaS products built from practitioner experience — for compliance management, compliance learning, and data risk intelligence.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', maxWidth: '800px', margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
             <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '10px', padding: '2rem', textAlign: 'left' as const }}>
               <div style={{ fontSize: '0.6rem', color: 'var(--gold)', letterSpacing: '0.15em', textTransform: 'uppercase' as const, marginBottom: '0.5rem' }}>Compliance Management</div>
               <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: '1.5rem', color: 'var(--navy)', marginBottom: '0.75rem', fontWeight: 700 }}>ComplianceOS</h3>
