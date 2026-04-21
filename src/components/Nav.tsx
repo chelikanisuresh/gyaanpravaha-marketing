@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
-import { createClient } from '@supabase/supabase-js'
+import { useState } from 'react'
 
 const SERVICES = [
   { href: '/services/rbi-compliance', label: 'RBI Regulatory Compliance' },
@@ -29,18 +28,6 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const [productsOpen, setProductsOpen] = useState(false)
-  const [loggedIn, setLoggedIn] = useState(false)
-
-  useEffect(() => {
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-    )
-    supabase.auth.getUser().then(({ data: { user } }) => {
-      setLoggedIn(!!user)
-    })
-  }, [])
-
   const linkStyle = { padding: '0.5rem 0.9rem', display: 'block', fontSize: '0.88rem', fontWeight: 500, color: 'rgba(255,255,255,0.75)', textDecoration: 'none' } as const
 
   return (
@@ -175,17 +162,10 @@ export default function Nav() {
           ))}
 
           <div style={{ padding: '1rem 1.5rem 0', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-            {loggedIn ? (
-              <a href="https://app.gyaanpravaha.com/admin"
-                style={{ display: 'block', background: 'rgba(201,168,76,0.15)', color: '#c9a84c', padding: '0.9rem', borderRadius: '4px', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none', textAlign: 'center', border: '1px solid rgba(201,168,76,0.3)' }}>
-                Dashboard
-              </a>
-            ) : (
-              <a href="https://app.gyaanpravaha.com/login"
-                style={{ display: 'block', background: 'transparent', color: 'rgba(255,255,255,0.7)', padding: '0.9rem', borderRadius: '4px', fontWeight: 500, fontSize: '0.95rem', textDecoration: 'none', textAlign: 'center', border: '1px solid rgba(255,255,255,0.15)' }}>
-                Login
-              </a>
-            )}
+            <a href="https://app.gyaanpravaha.com/login"
+              style={{ display: 'block', background: 'transparent', color: 'rgba(255,255,255,0.7)', padding: '0.9rem', borderRadius: '4px', fontWeight: 500, fontSize: '0.95rem', textDecoration: 'none', textAlign: 'center', border: '1px solid rgba(255,255,255,0.15)' }}>
+              Login
+            </a>
             <Link href="/contact" onClick={() => setMenuOpen(false)}
               style={{ display: 'block', background: '#c9a84c', color: '#0d1b2e', padding: '0.9rem', borderRadius: '4px', fontWeight: 700, fontSize: '0.95rem', textDecoration: 'none', textAlign: 'center' }}>
               Book a Discovery Call
